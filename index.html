@@ -331,6 +331,84 @@ body{background:#f5f7f1}
     .public-footer .ggg-legal a{color:#176349;text-decoration:underline;overflow-wrap:anywhere}
     @media(max-width:700px){.public-footer{padding-bottom:90px}.public-footer .ggg-legal{font-size:11px}}
   </style>
+<style>
+.curriculum-step .curriculum-count-detail{display:block;margin-top:4px;font-size:10px;line-height:1.5;color:#476952;font-weight:600}
+.curriculum-step .count{font-size:11px;line-height:1.5;color:#287958;white-space:normal;text-align:right;min-width:62px}
+.curriculum-step:focus-visible{outline:3px solid #3b9e7c;outline-offset:3px}
+</style>
+<style>
+
+/* Step 13 — child-first learning journey, progressive disclosure. */
+#view-tsumego>.page-kicker{color:#247250;font-weight:800}
+#view-tsumego>#puzzleTitle{font-size:clamp(25px,3vw,38px);margin:6px 0 7px}
+#view-tsumego>.page-desc{font-size:14px;line-height:1.75;margin-bottom:17px;max-width:850px}
+.kid-start-card{background:linear-gradient(128deg,#eefaf0,#fbfff6 74%);border:2px solid #b9e2c6;border-radius:24px;padding:clamp(17px,3vw,28px);margin-bottom:15px;box-shadow:0 4px 22px #1a654218}
+.kid-start-head h2{font-size:clamp(21px,2.5vw,28px);color:#184b33;margin:5px 0}
+.kid-start-head p{font-size:14px;color:#456d55;line-height:1.65;margin:6px 0 18px}
+.kid-eyebrow{font-size:12px;color:#297f52;font-weight:800;letter-spacing:.03em}
+.kid-main-actions{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);gap:10px}
+.kid-main-actions button,.kid-level{font:inherit;cursor:pointer;border-radius:15px;transition:transform .12s,background-color .12s}
+.kid-main-actions button:active,.kid-level:active{transform:scale(.985)}
+.kid-primary{background:#168350;color:#fff;border:2px solid #168350;padding:17px 15px;font-size:18px!important;font-weight:850;box-shadow:0 4px 12px #126d3b20}
+.kid-primary:hover{background:#086c41}
+.kid-secondary{background:white;color:#256744;border:2px solid #b1d8bf;padding:14px;font-size:14px!important;font-weight:850}
+.kid-secondary:hover{background:#e5f5e9}
+.kid-level-title{font-size:13px;font-weight:800;margin:22px 0 10px;color:#446b4f}
+.kid-level-picks{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.kid-level{display:flex;min-height:119px;flex-direction:column;align-items:center;justify-content:center;gap:6px;background:#fff;border:2px solid #d9e9d9;padding:12px 7px;color:#1d5236;text-align:center}
+.kid-level:hover,.kid-level:focus-visible{border-color:#28885a;background:#f2fff5}
+.kid-level:focus-visible,.kid-primary:focus-visible,.kid-secondary:focus-visible,.kid-fold>summary:focus-visible{outline:3px solid #efa840;outline-offset:3px}
+.kid-level-emoji{font-size:30px;line-height:1.1}
+.kid-level strong{font-size:14px}.kid-level small{font-size:11px;color:#678272}
+.kid-status{background:#fff;border:1px solid #d5e9d8;border-radius:11px;padding:11px 13px;color:#356d48;font-size:12px;line-height:1.7;margin:16px 0 0}
+#view-tsumego .puzzle-companion{margin:12px 0}
+#view-tsumego .kid-main-board{margin-top:13px}
+#view-tsumego .kid-main-board .board-info strong{font-size:17px}
+#view-tsumego .kid-main-board .board-aside>.card{padding:18px}
+#view-tsumego .kid-main-board .board-aside .divider:has(+.capture-grid){display:none}
+.kid-fold{border:1px solid #d2e5d5;border-radius:17px;background:#fff;margin-top:12px;overflow:hidden}
+.kid-fold>summary{list-style:none;display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:58px;font-size:15px;font-weight:800;cursor:pointer;padding:15px 19px;color:#285e43}
+.kid-fold>summary::-webkit-details-marker{display:none}
+.kid-fold>summary:hover{background:#f2faf4}
+.kid-chevron{font-size:22px;transition:transform .15s;color:#639b73}
+.kid-fold[open]>summary{background:#f1faf3;border-bottom:1px solid #e2eee2}
+.kid-fold[open]>summary .kid-chevron{transform:rotate(180deg)}
+.kid-fold-body{padding:14px 16px 20px;min-width:0}
+.kid-fold-intro{color:#618071;font-size:12px;margin:0 0 15px;line-height:1.7}
+#kidBrowse{margin-top:20px}
+#kidAdvanced{margin:12px 0 24px}
+#kidAdvanced>.kid-fold-body>.kid-fold{margin:8px 0}
+#kidAdvanced .smart-card,#kidAdvanced .ggg-full-card,#kidAdvanced .adaptive-training-card,#kidAdvanced .library-panel,#kidAdvanced .curriculum-card{margin:0}
+#kidBrowse .puzzle-list{margin-top:12px}
+#kidBrowse .section-heading{margin:0 0 10px}
+#kidBrowse .section-heading span{display:none}
+#kidBrowse .library-pagination{margin-bottom:10px}
+#kidBrowse .puzzle-toolbar{margin:0;flex-wrap:wrap}
+#kidBrowse #kidProblemPicker{border:1px solid #edf0ea}
+#kidMovesDetails{margin:0}
+#kidMovesDetails .kid-fold-body{padding:5px}
+#kidMovesDetails .card{border:0;box-shadow:none;margin:0;padding:12px}
+#kidSourceDetails,#kidStatsDetails{border-color:#e3eae1}
+#kidSourceDetails>summary,#kidStatsDetails>summary{min-height:42px;font-size:12px;padding:9px 12px}
+#kidSourceDetails .kid-fold-body,#kidStatsDetails .kid-fold-body{padding:5px 10px 14px}
+#view-tsumego #puzzleSourceCredit:not([hidden]){margin:4px 0}
+#view-tsumego .kid-start-card .kid-level{touch-action:manipulation}
+@media(max-width:650px){
+ #view-tsumego>.page-desc{font-size:12px}
+ .kid-start-card{border-radius:18px;padding:17px 13px}
+ .kid-main-actions{grid-template-columns:1fr}
+ .kid-primary{font-size:16px!important;padding:16px}
+ .kid-secondary{font-size:13px!important;padding:13px}
+ .kid-level-picks{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+ .kid-level{min-height:105px;padding:8px 4px}
+ .kid-level-emoji{font-size:27px}
+ .kid-fold-body{padding:10px}
+ #view-tsumego .kid-main-board .board-aside{display:flex;flex-direction:column}
+ #view-tsumego .kid-main-board .puzzle-button-row{gap:7px;flex-wrap:wrap}
+ #view-tsumego .kid-main-board .puzzle-button-row .btn{min-height:43px}
+}
+
+</style>
 </head>
 <body>
 <div class="layout">
@@ -491,87 +569,97 @@ body{background:#f5f7f1}
       </section>
 
 
-      <section class="view" id="view-tsumego" aria-labelledby="puzzleTitle">
-        <div class="page-kicker">03 / TSUMEGO TRAINING</div><h1 id="puzzleTitle">사활 문제 풀이</h1>
-        <p class="page-desc">내장 원본 7종과 회전·흑백 응용 28종에 더해, Go Game Guru 원본 422종의 전체 목록을 제공하며, SGF 422개를 앱에 넣어 인터넷 없이 사용할 수 있습니다. <strong>원본 분류는 공인 단급이 아니며 기존 공식 기력형 자동 추천은 L1·L2로 제한</strong>입니다.</p>
-        <section class="smart-card" aria-label="단계별 어린이 맞춤 문제 추천">
-          <div class="smart-top"><div><span class="smart-tag">🌟 STEP 10 · 아이 맞춤 사활</span><h2>내 수준에 맞춰 한 문제씩!</h2><p>기초부터 시작해 차근차근 원본 문제로 도전해요.</p></div><span class="smart-chip" id="smartBadge">기초 연습</span></div>
-          <div class="smart-controls"><label for="smartMode">연습 방법<select id="smartMode" aria-label="연습 방법과 원본 난이도 선택"><option value="auto">🧠 자동 추천 (기초 우선)</option><option value="basic">🌱 검증된 기초 연습</option><option value="easy">🍀 원본 쉬움 (직접 도전)</option><option value="intermediate">🌻 원본 중간 (직접 도전)</option><option value="hard">🔥 원본 어려움 (직접 도전)</option></select></label><button type="button" class="btn btn-primary" id="smartStart">🎯 추천 문제 풀기</button><button type="button" class="btn btn-secondary" id="smartBasicTest">🔎 기초 5문제 점검</button></div>
-          <p id="smartStatus" class="smart-status" aria-live="polite">기초 문제부터 준비하고 있어요.</p>
-          <p class="smart-caution">원본 쉬움·중간·어려움은 Go Game Guru의 분류이며 공식 단급 난이도가 아닙니다. 자동 추천은 기초 점검과 서로 다른 문제의 힌트 없는 성공을 기준으로 보수적으로 진행해요. 직접 선택은 언제든 가능합니다. 외부 문제는 XP와 공식 실력 평가에서 제외됩니다.</p>
-        </section>
-        <section class="ggg-full-card" aria-label="Go Game Guru 전체 문제집">
- <div class="ggg-full-header"><span>📚 FAMILY GO LIBRARY</span><strong>Go Game Guru 전체 422문제</strong><small>쉬움 140 · 중간 140 · 어려움 140 · 특별 문제 2 / 어린이용 한글 해설: 쉬움 140 · 중간 140 · 어려움 140</small></div>
- <p class="ggg-easy-announcement">🌱 쉬움·중간·어려움 <strong>420문제에 한글 수순 해설</strong>을 추가했어요. 문제를 푼 뒤 <strong>정답·실패 해설 → 아이와 함께 읽는 해설</strong>에서 볼 수 있어요. 정답을 풀기 전에는 보여주지 않아요.</p>
- <p>기존 사활 모험과 별도로 <strong>모든 SGF 문제를 찾아볼 수 있게</strong> 준비했습니다. 업로드해 주신 원본 SGF 422개가 이 앱 안에 모두 포함되어 있습니다. 실행하면 자동으로 등록합니다. 421개는 정답 표시가 있어 풀이할 수 있고, 특별 1개는 정답 주석이 없어 감상용입니다.</p>
- <div class="ggg-full-actions"><button class="btn btn-primary" type="button" id="gggFetchAll">📚 421문제 다시 등록</button><button class="btn btn-secondary" type="button" id="gggRetry">🔄 보류 문제 재검사</button><button class="btn btn-secondary" type="button" id="gggReport">📄 검수 내역 저장</button></div>
- <div class="ggg-full-progress"><div id="gggProgressBar"></div></div><p id="gggStatus" role="status" aria-live="polite">원본 SGF 422개를 앱에서 준비하고 있습니다. 인터넷 연결이 필요하지 않습니다.</p>
- <label class="ggg-full-search">전체 422개 목록 검색 <input id="gggSearch" type="search" placeholder="예: easy-25, hard-10, intermediate" aria-label="원본 문제 검색"></label>
- <div class="ggg-full-categories" id="gggCategories"></div><div class="ggg-full-list" id="gggCatalogList" aria-label="Go Game Guru SGF 전체 목록"></div>
- <p class="tiny-help">출처: <a href="https://github.com/gogameguru/go-problems" target="_blank" rel="noopener noreferrer">Go Game Guru</a> · CC BY-NC-SA 4.0. 원본 분류와 기력·사활 정답 인증은 다릅니다. 이 외부 문제들은 보상·공식 실력 진단에 반영되지 않습니다. 문제와 정답 수순은 오프라인에서 제공됩니다. 특별 수순 1개는 정답 표시가 없는 감상용입니다.</p>
- </section>
- <div class="puzzle-companion" id="puzzleCompanion"><div class="puzzle-companion-avatar" id="puzzleCompanionAvatar" aria-hidden="true"></div><div class="puzzle-companion-body"><strong id="puzzleCompanionName">모험 친구</strong><span id="puzzleCompanionLine">캐릭터를 선택하면 응원해 줘요!</span></div><button type="button" class="puzzle-companion-change" data-view="characters" id="puzzleCompanionChoose">친구 선택하기</button></div>
-        <div id="puzzleRewardNotice" class="puzzle-reward-notice" role="status" aria-live="polite" hidden></div>
-        <div id="stage9BossBanner" class="stage9-boss-banner" hidden aria-live="polite">
-          <div><strong id="stage9BossTitle">보스 도전</strong><p id="stage9BossInfo">수호 시험을 시작해 봐요.</p></div>
-          <div class="stage9-boss-actions"><button class="btn stage9-gold-button" id="stage9BossAdvance" type="button" hidden>다음 보스 문제</button><button class="btn btn-secondary" id="stage9BossRetry" type="button" hidden>↻ 다시 도전</button><button class="btn btn-secondary" id="stage9BossExit" type="button">미션 화면</button></div>
-        </div>
- <div class="adaptive-training-card" aria-label="개인 맞춤 사활 추천">
-  <div class="adaptive-training-top"><div><span class="adaptive-tag">🧩 STEP 08 · 맞춤 훈련</span><h2>내 실력에 맞는 문제</h2><p id="adaptiveReason" role="status" aria-live="polite">기초 문제를 준비할게요.</p></div><span id="adaptiveCurrentLevel" class="adaptive-level-label">L1</span></div>
-  <div class="adaptive-level-metrics"><span id="adaptiveRankInfo">설정 기력 · 미설정</span><span id="adaptiveRecent">최근 풀이 0회</span><span id="adaptiveWeakness">보완 유형 · 더 풀어보자</span></div>
-  <div class="adaptive-control-row"><label for="adaptiveManualLevel">난이도 선택</label><select id="adaptiveManualLevel" class="select-input" aria-label="수동 연습 난이도"><option value="1">L1 · 30~21급</option><option value="2">L2 · 20~11급</option><option value="3">L3 · 10~1급</option><option value="4">L4 · 아마 1~3단</option><option value="5">L5 · 아마 4~5단</option><option value="6">L6 · 아마 6~7단</option><option value="7">L7 · 프로 1~3단</option><option value="8">L8 · 프로 4~6단</option><option value="9">L9 · 프로 7~9단</option></select>
-  <button type="button" id="adaptiveModeToggle" class="btn btn-secondary">자동 추천 사용 중</button></div>
-  <div class="adaptive-control-row"><button type="button" id="adaptiveStart" class="btn btn-primary">🎯 추천 문제 시작</button><button type="button" id="adaptiveDiagnosticStart" class="btn btn-secondary">🔎 기초 5문제 점검</button><button type="button" id="adaptiveDiagnosticNext" class="btn btn-secondary" hidden>다음 점검 문제 →</button></div>
-  <p id="adaptiveDiagnosticProgress" class="adaptive-diagnostic-progress" aria-live="polite">아직 기초 수준을 점검하지 않았어요. 언제든 선택할 수 있어요.</p>
-  <p id="adaptiveFeedback" class="adaptive-feedback" role="status" aria-live="polite"></p>
-  <p class="tiny-help">여기의 L1~L9는 <strong>학습 콘텐츠 구간</strong>이지 공식 기력 판정이 아니에요. 상위 아마·프로 전문 문제는 아직 없어 현재 검증된 구간만 추천해요. 회전·색상 변형은 같은 원형으로 구분해 평가해요.</p>
- </div>
-        <div class="puzzle-toolbar"><label for="problemPicker" class="field-title">문제 선택</label><select id="problemPicker" class="select-input" aria-label="사활 문제 선택"></select><span id="puzzleCountBadge" class="board-size-pill">35문제</span><button type="button" class="btn btn-secondary btn-small" id="jumpLibrary">문제 찾기·SGF ↓</button></div>
-        <div class="board-layout">
-         <div class="board-column">
-          <div class="board-info"><div><span class="eyebrow" id="puzzleCategory">돌 따내기</span><strong id="puzzleName">문제 선택</strong></div><span id="puzzleDifficulty" class="board-size-pill">입문</span></div>
-          <div class="turn-strip"><span class="turn-stone black" id="puzzleTurnStone"></span><div><small>문제 차례</small><strong id="puzzleTurn">흑 차례</strong></div><span class="turn-moves" id="puzzleMoveCount">0수</span></div>
-          <div class="go-board-frame"><div class="board-scroll"><div id="puzzleBoardMount" class="board-mount" aria-label="사활 문제 바둑판" tabindex="0"></div></div></div>
-          <div id="puzzleStatus" class="board-status" aria-live="polite">교차점을 눌러 정답을 찾아보세요.</div>
-          <div id="stage11ReviewBanner" class="review-active-banner" hidden role="status" aria-live="polite"></div>
-          <div class="smart-hint" id="smartHintPanel" hidden aria-live="polite"><strong id="smartHintHeading">💡 단계별 힌트</strong><p id="smartHintText"></p><small id="smartHintNote"></small></div>
-          <div class="puzzle-button-row"><button class="btn btn-secondary" id="puzzleHint" type="button">💡 힌트</button><button class="btn btn-secondary" id="puzzleUndo" type="button">↶ 이번 차례 무르기</button><button class="btn btn-secondary" id="puzzleReset" type="button">↺ 다시 풀기</button></div>
-          <div class="puzzle-button-row"><button class="btn btn-primary" id="puzzleSolutions" type="button">정답·실패 해설</button><button class="btn btn-secondary" id="puzzleNext" type="button">다음 문제 →</button></div>
-          <p class="tiny-help">검수되지 않은 합법적인 착수는 오답으로 단정하지 않으며 기록에도 반영하지 않습니다. 색깔은 문제에 따라 바뀝니다.</p>
-         </div>
-         <aside class="board-aside"><div class="card"><span class="eyebrow">MISSION</span><h3 id="puzzlePrompt">문제 목표</h3><p id="puzzleTeaching" class="side-description"></p><div id="puzzleSourceCredit" class="puzzle-source-credit" hidden></div><div class="divider"></div><div class="capture-grid"><div><span>이 문제의 시도</span><strong id="puzzleAttempt">0</strong></div><div><span>성공 기록</span><strong id="puzzleWins">0</strong></div></div></div><div class="card"><span class="eyebrow">MOVE EXPLANATION</span><h3>현재 수순</h3><ol id="puzzleMoveLog" class="move-log"><li>아직 착수하지 않았습니다.</li></ol></div></aside>
-        </div>
-        <div class="library-panel card" aria-label="문제 보관함 필터 및 SGF 관리">
-          <div class="library-panel-heading"><div><span class="eyebrow">PROBLEM LIBRARY · STEP 05</span><h2>문제 라이브러리</h2><p>원본·응용 배치를 구분합니다. 실제 전문 기력별 난이도는 별도 검수가 필요합니다.</p></div><span class="board-size-pill" id="libraryTotal">35개 등록</span></div>
-          <div class="library-filters">
-            <label>기력 구간<select class="select-input" id="filterGroup"><option value="">전체 구간</option><option value="급수">급수</option><option value="아마">아마</option><option value="프로">프로</option></select></label>
-            <label>세부 레벨<select class="select-input" id="filterLevel"><option value="">전체 난이도</option><option value="1">L1 · 30~21급</option><option value="2">L2 · 20~11급</option><option value="3">L3 · 10~1급</option><option value="4">L4 · 아마 1~3단</option><option value="5">L5 · 아마 4~5단</option><option value="6">L6 · 아마 6~7단</option><option value="7">L7 · 프로 1~3단</option><option value="8">L8 · 프로 4~6단</option><option value="9">L9 · 프로 7~9단</option></select></label>
-            <label>문제 유형<select class="select-input" id="filterCategory"><option value="">전체 유형</option></select></label>
-            <label>문제 검색<input class="select-input" id="filterText" type="search" placeholder="제목·설명·유형 검색"></label>
-          </div>
-          <div class="library-actions"><label class="library-check"><input type="checkbox" id="filterOriginals"> 원본 문제만 보기</label><button type="button" class="btn btn-secondary btn-small" id="clearFilters">필터 초기화</button><span id="filterSummary" role="status">35개 문제</span></div>
-          <div class="library-io"><label class="btn btn-secondary btn-small library-file-button" for="sgfFile">SGF 가져오기<input id="sgfFile" type="file" accept=".sgf,text/plain,application/x-go-sgf"></label><button class="btn btn-secondary btn-small" type="button" id="exportSgf">현재 문제 SGF 저장</button><button class="btn btn-secondary btn-small" type="button" id="deleteImported" hidden>현재 가져온 문제 삭제</button><span class="io-status" id="sgfMessage" aria-live="polite">앱 전용 목표·정답 태그가 포함된 SGF만 정답 검증 후 등록됩니다.</span></div>
-          <details class="converter-lab" id="converterLab"><summary>🧪 외부 SGF 자동 변환 · 규칙 검사 (학습 콘텐츠 관리 도구)</summary>
-            <p>SGF 파일을 분석하여 <strong>초기 배치·흑백 차례·변화도·정답 주석</strong>을 자동 추출합니다. 합법적인 수순만 확인하며 <strong>실제 두 집 사활의 정답, 공식 난이도, 저작권은 자동 검증하지 않습니다.</strong></p>
-            <div class="pilot-pack"><strong>📘 집에서 푸는 사활 원정대 · 원본 문제 50개</strong>
-<p>Go Game Guru easy의 <strong>서로 다른 원본 배치 50개</strong>를 모았습니다(이전 15개 + 신규 35개). 정답 수순을 한국어로 안내하며 복수 정답도 보존했습니다. <strong>원본 주석을 바탕으로 한 가족 학습용 문제집</strong>으로, 공식 기력/완전한 사활 증명은 아닙니다.</p>
-<div class="pilot-actions"><button type="button" id="install50Pack" class="btn btn-primary btn-small">🎮 기존 50문제 확인 (422문제에 포함됨)</button>
-<button type="button" id="loadPilotSamples" class="btn btn-secondary btn-small">🔎 50개 원본 수순 검사하기</button></div>
-<span id="packInstallStatus" class="converter-status" role="status" aria-live="polite">문제집은 최초 1회만 추가하면 됩니다. 기존 35개 기본 배치는 그대로 유지됩니다. 전체 422문제 통합판에서는 중복 등록하지 않습니다.</span>
-<p class="tiny-help">제공: Go Game Guru · <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-NC-SA 4.0</a> · 저작자 표시 · 비상업적 사용 · 동일조건변경허락. GitHub Pages 공개도 배포에 해당하므로 이 조건을 지켜야 합니다. 광고·유료 앱에 별도 허가 없이 사용할 수 없습니다.</p>
-</div>
-            <label class="btn btn-secondary btn-small converter-picker" for="converterFiles">SGF 여러 개 선택 (최대 20개)<input type="file" id="converterFiles" multiple accept=".sgf,application/x-go-sgf,text/plain"></label>
-            <button type="button" class="btn btn-secondary btn-small" id="converterReport" disabled>검사 결과 JSON 저장</button>
-            <span id="converterSummary" class="converter-status" role="status" aria-live="polite">아직 검사한 파일이 없습니다.</span>
-            <div class="converter-layout"><div class="converter-file-list" id="converterList" aria-label="검사 대상 파일 목록"></div>
-              <div class="converter-detail" id="converterDetail"><p>파일을 선택하면 자동 검사 결과를 확인할 수 있습니다.</p></div></div>
-          </details>
-        </div>
-        <div class="card curriculum-card"><div class="library-panel-heading"><div><span class="eyebrow">CURRICULUM</span><h2>9개 난이도 구간 · 문제 구축 현황</h2></div></div><div class="curriculum-grid" id="curriculumGrid"></div><p class="tiny-help">46개 기력 선택은 모두 지원합니다. 현재 내장 문제의 수준은 입문·초급이며, 아마·프로 문제의 빈 구간을 속여 채우지 않습니다.</p></div>
-        <div class="section-heading"><h2>다른 문제 선택</h2><span>입문·초급 문제를 조건별로 탐색</span></div>
-        <div id="problemList" class="puzzle-list" aria-label="문제 목록"></div><div class="library-pagination"><button type="button" class="btn btn-secondary btn-small" id="listPrev">← 이전</button><span id="listPageInfo">1 / 3</span><button type="button" class="btn btn-secondary btn-small" id="listNext">다음 →</button></div><p id="libraryEmpty" class="library-empty" hidden>선택한 조건에 해당하는 검증된 문제가 없습니다. 필터를 바꾸거나 SGF 문제를 가져오세요.</p>
-      </section>
+<section aria-labelledby="puzzleTitle" class="view" id="view-tsumego">
+<div class="page-kicker">03 / TSUMEGO TRAINING</div><h1 id="puzzleTitle">🌱 사활 탐험</h1>
+<p class="page-desc">바둑판에 돌을 놓고 정답을 찾아봐요. 어려우면 힌트를 눌러도 괜찮아요!</p>
 
+
+
+
+
+
+
+
+
+
+
+
+<section aria-label="어린이를 위한 사활 시작" class="kid-start-card">
+<div class="kid-start-head"><span class="kid-eyebrow">🎮 오늘의 바둑 모험</span><h2>어떤 문제를 풀어볼까?</h2><p>처음이라면 <strong>오늘의 추천</strong>을 눌러요. 기초 5문제로 시작할 수 있어요.</p></div>
+<div class="kid-main-actions"><button class="kid-primary" id="kidStart" type="button">▶ 오늘의 추천 문제 풀기</button><button class="kid-secondary" id="kidReview" type="button">↺ 틀린 문제 다시 풀기</button></div>
+<div class="kid-level-title">내가 고르고 싶다면?</div>
+<div aria-label="도전할 문제집 선택" class="kid-level-picks" role="group">
+<button class="kid-level" data-kid-mode="basic" type="button"><span class="kid-level-emoji">🌱</span><strong>처음부터</strong><small>기초 연습</small></button>
+<button class="kid-level" data-kid-mode="easy" type="button"><span class="kid-level-emoji">🍀</span><strong>쉬운 문제</strong><small>천천히 도전</small></button>
+<button class="kid-level" data-kid-mode="intermediate" type="button"><span class="kid-level-emoji">🌻</span><strong>중간 문제</strong><small>조금 더 생각!</small></button>
+<button class="kid-level" data-kid-mode="hard" type="button"><span class="kid-level-emoji">🔥</span><strong>어려운 문제</strong><small>도전해 보기</small></button>
+</div>
+<p aria-live="polite" class="kid-status" id="kidStatus" role="status">💚 바둑돌을 놓으며 한 문제씩 탐험해요!</p>
+</section><div class="puzzle-companion" id="puzzleCompanion"><div aria-hidden="true" class="puzzle-companion-avatar" id="puzzleCompanionAvatar"></div><div class="puzzle-companion-body"><strong id="puzzleCompanionName">모험 친구</strong><span id="puzzleCompanionLine">캐릭터를 선택하면 응원해 줘요!</span></div><button class="puzzle-companion-change" data-view="characters" id="puzzleCompanionChoose" type="button">친구 선택하기</button></div><div aria-live="polite" class="puzzle-reward-notice" hidden="" id="puzzleRewardNotice" role="status"></div><div aria-live="polite" class="stage9-boss-banner" hidden="" id="stage9BossBanner">
+<div><strong id="stage9BossTitle">보스 도전</strong><p id="stage9BossInfo">수호 시험을 시작해 봐요.</p></div>
+<div class="stage9-boss-actions"><button class="btn stage9-gold-button" hidden="" id="stage9BossAdvance" type="button">다음 보스 문제</button><button class="btn btn-secondary" hidden="" id="stage9BossRetry" type="button">↻ 다시 도전</button><button class="btn btn-secondary" id="stage9BossExit" type="button">미션 화면</button></div>
+</div><div class="board-layout kid-main-board">
+<div class="board-column">
+<div class="board-info"><div><span class="eyebrow" id="puzzleCategory">돌 따내기</span><strong id="puzzleName">문제 선택</strong></div><span class="board-size-pill" id="puzzleDifficulty">입문</span></div>
+<div class="turn-strip"><span class="turn-stone black" id="puzzleTurnStone"></span><div><small>문제 차례</small><strong id="puzzleTurn">흑 차례</strong></div><span class="turn-moves" id="puzzleMoveCount">0수</span></div>
+<div class="go-board-frame"><div class="board-scroll"><div aria-label="사활 문제 바둑판" class="board-mount" id="puzzleBoardMount" tabindex="0"></div></div></div>
+<div aria-live="polite" class="board-status" id="puzzleStatus">교차점을 눌러 정답을 찾아보세요.</div>
+<div aria-live="polite" class="review-active-banner" hidden="" id="stage11ReviewBanner" role="status"></div>
+<div aria-live="polite" class="smart-hint" hidden="" id="smartHintPanel"><strong id="smartHintHeading">💡 단계별 힌트</strong><p id="smartHintText"></p><small id="smartHintNote"></small></div>
+<div class="puzzle-button-row"><button class="btn btn-secondary" id="puzzleHint" type="button">💡 힌트 보기</button><button class="btn btn-secondary" id="puzzleUndo" type="button">↶ 한 수 되돌리기</button><button class="btn btn-secondary" id="puzzleReset" type="button">↺ 다시 도전</button></div>
+<div class="puzzle-button-row"><button class="btn btn-primary" id="puzzleSolutions" type="button">🔍 정답과 해설</button><button class="btn btn-secondary" id="puzzleNext" type="button">➡️ 다음 문제</button></div>
+<p class="tiny-help">검수되지 않은 합법적인 착수는 오답으로 단정하지 않으며 기록에도 반영하지 않습니다. 색깔은 문제에 따라 바뀝니다.</p>
+</div>
+<aside class="board-aside"><div class="card"><span class="eyebrow">🌱 오늘의 미션</span><h3 id="puzzlePrompt">문제 목표</h3><p class="side-description" id="puzzleTeaching"></p><div class="divider"></div><details class="kid-fold" id="kidSourceDetails"><summary><span>📖 이 문제의 출처·저작권</span><span aria-hidden="true" class="kid-chevron">⌄</span></summary><div class="kid-fold-body"><div class="puzzle-source-credit" hidden="" id="puzzleSourceCredit"></div></div></details><details class="kid-fold" id="kidStatsDetails"><summary><span>🏅 내 도전 기록 보기</span><span aria-hidden="true" class="kid-chevron">⌄</span></summary><div class="kid-fold-body"><div class="capture-grid"><div><span>이 문제의 시도</span><strong id="puzzleAttempt">0</strong></div><div><span>성공 기록</span><strong id="puzzleWins">0</strong></div></div></div></details></div><details class="kid-fold" id="kidMovesDetails"><summary><span>📝 내가 둔 수순 보기</span><span aria-hidden="true" class="kid-chevron">⌄</span></summary><div class="kid-fold-body"><div class="card"><span class="eyebrow">MOVE EXPLANATION</span><h3>현재 수순</h3><ol class="move-log" id="puzzleMoveLog"><li>아직 착수하지 않았습니다.</li></ol></div></div></details></aside>
+</div><details class="kid-fold" id="kidBrowse"><summary><span>📚 다른 문제 직접 고르기</span><span aria-hidden="true" class="kid-chevron">⌄</span></summary><div class="kid-fold-body"><p class="kid-fold-intro">마음에 드는 문제를 골라 볼 수 있어요. 목록은 조금씩 보여줘요.</p><div class="section-heading"><h2>다른 문제 선택</h2><span>입문·초급 문제를 조건별로 탐색</span></div><div aria-label="문제 목록" class="puzzle-list" id="problemList"></div><div class="library-pagination"><button class="btn btn-secondary btn-small" id="listPrev" type="button">← 이전</button><span id="listPageInfo">1 / 3</span><button class="btn btn-secondary btn-small" id="listNext" type="button">다음 →</button></div><p class="library-empty" hidden="" id="libraryEmpty">선택한 조건에 해당하는 검증된 문제가 없습니다. 필터를 바꾸거나 SGF 문제를 가져오세요.</p><details class="kid-fold" id="kidProblemPicker"><summary><span>🔎 문제 번호로 찾기</span><span aria-hidden="true" class="kid-chevron">⌄</span></summary><div class="kid-fold-body"><div class="puzzle-toolbar"><label class="field-title" for="problemPicker">문제 선택</label><select aria-label="사활 문제 선택" class="select-input" id="problemPicker"></select><span class="board-size-pill" id="puzzleCountBadge">35문제</span><button class="btn btn-secondary btn-small" id="jumpLibrary" type="button">문제 찾기·SGF ↓</button></div></div></details></div></details><details class="kid-fold" id="kidAdvanced"><summary><span>⚙️ 보호자 · 자세한 설정과 전체 문제집</span><span aria-hidden="true" class="kid-chevron">⌄</span></summary><div class="kid-fold-body"><p class="kid-fold-intro">난이도 트랙, 전체 422문제 목록, SGF 관리와 검수 도구는 여기에서 확인할 수 있어요. 아이는 위의 큰 버튼만 사용하면 됩니다.</p><details class="kid-fold" id="kidSmartAdvanced"><summary><span>🎯 상세 추천·학습 방식</span><span aria-hidden="true" class="kid-chevron">⌄</span></summary><div class="kid-fold-body"><section aria-label="단계별 어린이 맞춤 문제 추천" class="smart-card">
+<div class="smart-top"><div><span class="smart-tag">🌟 STEP 10 · 아이 맞춤 사활</span><h2>내 수준에 맞춰 한 문제씩!</h2><p>기초부터 시작해 차근차근 원본 문제로 도전해요.</p></div><span class="smart-chip" id="smartBadge">기초 연습</span></div>
+<div class="smart-controls"><label for="smartMode">연습 방법<select aria-label="연습 방법과 원본 난이도 선택" id="smartMode"><option value="auto">🧠 자동 추천 (기초 우선)</option><option value="basic">🌱 검증된 기초 연습</option><option value="easy">🍀 원본 쉬움 (직접 도전)</option><option value="intermediate">🌻 원본 중간 (직접 도전)</option><option value="hard">🔥 원본 어려움 (직접 도전)</option><option value="level-1">L1 · 30~21급 연습 (비공인)</option><option value="level-2">L2 · 20~11급 연습 (비공인)</option><option value="level-3">L3 · 10~1급 연습 (비공인)</option><option value="level-4">L4 · 아마 1~3단 연습 (비공인)</option><option value="level-5">L5 · 아마 4~5단 연습 (비공인)</option><option value="level-6">L6 · 아마 6~7단 연습 (비공인)</option><option value="level-7">L7 · 프로 1~3단 연습 (비공인)</option><option value="level-8">L8 · 프로 4~6단 연습 (비공인)</option><option value="level-9">L9 · 프로 7~9단 연습 (비공인)</option></select></label><button class="btn btn-primary" id="smartStart" type="button">🎯 추천 문제 풀기</button><button class="btn btn-secondary" id="smartBasicTest" type="button">🔎 기초 5문제 점검</button></div>
+<p aria-live="polite" class="smart-status" id="smartStatus">기초 문제부터 준비하고 있어요.</p>
+<p class="smart-caution">원본 쉬움·중간·어려움은 Go Game Guru의 분류이며 공식 단급 난이도가 아닙니다. 자동 추천은 기초 점검과 서로 다른 문제의 힌트 없는 성공을 기준으로 보수적으로 진행해요. 직접 선택은 언제든 가능합니다. 외부 문제는 XP와 공식 실력 평가에서 제외됩니다.</p>
+</section></div></details><details class="kid-fold" id="kidAdaptiveAdvanced"><summary><span>🧩 L1~L9 기력 연습 설정</span><span aria-hidden="true" class="kid-chevron">⌄</span></summary><div class="kid-fold-body"><div aria-label="개인 맞춤 사활 추천" class="adaptive-training-card">
+<div class="adaptive-training-top"><div><span class="adaptive-tag">🧩 STEP 08 · 맞춤 훈련</span><h2>내 실력에 맞는 문제</h2><p aria-live="polite" id="adaptiveReason" role="status">기초 문제를 준비할게요.</p></div><span class="adaptive-level-label" id="adaptiveCurrentLevel">L1</span></div>
+<div class="adaptive-level-metrics"><span id="adaptiveRankInfo">설정 기력 · 미설정</span><span id="adaptiveRecent">최근 풀이 0회</span><span id="adaptiveWeakness">보완 유형 · 더 풀어보자</span></div>
+<div class="adaptive-control-row"><label for="adaptiveManualLevel">난이도 선택</label><select aria-label="수동 연습 난이도" class="select-input" id="adaptiveManualLevel"><option value="1">L1 · 30~21급 목표 (연습용)</option><option value="2">L2 · 20~11급 목표 (연습용)</option><option value="3">L3 · 10~1급 목표 (연습용)</option><option value="4">L4 · 아마 1~3단 목표 (연습용)</option><option value="5">L5 · 아마 4~5단 목표 (연습용)</option><option value="6">L6 · 아마 6~7단 목표 (연습용)</option><option value="7">L7 · 프로 1~3단 목표 (연습용)</option><option value="8">L8 · 프로 4~6단 목표 (연습용)</option><option value="9">L9 · 프로 7~9단 목표 (연습용)</option></select>
+<button class="btn btn-secondary" id="adaptiveModeToggle" type="button">자동 추천 사용 중</button></div>
+<div class="adaptive-control-row"><button class="btn btn-primary" id="adaptiveStart" type="button">🎯 추천 문제 시작</button><button class="btn btn-secondary" id="adaptiveDiagnosticStart" type="button">🔎 기초 5문제 점검</button><button class="btn btn-secondary" hidden="" id="adaptiveDiagnosticNext" type="button">다음 점검 문제 →</button></div>
+<p aria-live="polite" class="adaptive-diagnostic-progress" id="adaptiveDiagnosticProgress">아직 기초 수준을 점검하지 않았어요. 언제든 선택할 수 있어요.</p>
+<p aria-live="polite" class="adaptive-feedback" id="adaptiveFeedback" role="status"></p>
+<p class="tiny-help">여기의 L1~L9는 <strong>학습용 연습 트랙</strong>이지 공식 기력 판정이 아닙니다. 모든 구간을 연습할 수 있지만 Go Game Guru 문제의 배정은 SGF 자료를 활용한 임시 분류입니다. 프로 단급 난이도를 전문가가 인증한 것이 아닙니다. 회전·색상 변형은 같은 원형으로 구분해 평가해요.</p>
+</div></div></details><details class="kid-fold" id="kidAllGGG"><summary><span>🗂️ 422문제 전체 목록</span><span aria-hidden="true" class="kid-chevron">⌄</span></summary><div class="kid-fold-body"><section aria-label="Go Game Guru 전체 문제집" class="ggg-full-card">
+<div class="ggg-full-header"><span>📚 FAMILY GO LIBRARY</span><strong>Go Game Guru 전체 422문제</strong><small>쉬움 140 · 중간 140 · 어려움 140 · 특별 문제 2 / 어린이용 한글 해설: 쉬움 140 · 중간 140 · 어려움 140</small></div>
+<p class="ggg-easy-announcement">🌱 쉬움·중간·어려움 <strong>420문제에 한글 수순 해설</strong>을 추가했어요. 문제를 푼 뒤 <strong>정답·실패 해설 → 아이와 함께 읽는 해설</strong>에서 볼 수 있어요. 정답을 풀기 전에는 보여주지 않아요.</p>
+<p>기존 사활 모험과 별도로 <strong>모든 SGF 문제를 찾아볼 수 있게</strong> 준비했습니다. 업로드해 주신 원본 SGF 422개가 이 앱 안에 모두 포함되어 있습니다. 실행하면 자동으로 등록합니다. 421개는 정답 표시가 있어 풀이할 수 있고, 특별 1개는 정답 주석이 없어 감상용입니다.</p>
+<div class="ggg-full-actions"><button class="btn btn-primary" id="gggFetchAll" type="button">📚 421문제 다시 등록</button><button class="btn btn-secondary" id="gggRetry" type="button">🔄 보류 문제 재검사</button><button class="btn btn-secondary" id="gggReport" type="button">📄 검수 내역 저장</button></div>
+<div class="ggg-full-progress"><div id="gggProgressBar"></div></div><p aria-live="polite" id="gggStatus" role="status">원본 SGF 422개를 앱에서 준비하고 있습니다. 인터넷 연결이 필요하지 않습니다.</p>
+<label class="ggg-full-search">전체 422개 목록 검색 <input aria-label="원본 문제 검색" id="gggSearch" placeholder="예: easy-25, hard-10, intermediate" type="search"/></label>
+<div class="ggg-full-categories" id="gggCategories"></div><div aria-label="Go Game Guru SGF 전체 목록" class="ggg-full-list" id="gggCatalogList"></div>
+<p class="tiny-help">출처: <a href="https://github.com/gogameguru/go-problems" rel="noopener noreferrer" target="_blank">Go Game Guru</a> · CC BY-NC-SA 4.0. 원본 분류와 기력·사활 정답 인증은 다릅니다. 이 외부 문제들은 보상·공식 실력 진단에 반영되지 않습니다. 문제와 정답 수순은 오프라인에서 제공됩니다. 특별 수순 1개는 정답 표시가 없는 감상용입니다.</p>
+</section></div></details><details class="kid-fold" id="kidCurriculum"><summary><span>📊 L1~L9 문제 구성표</span><span aria-hidden="true" class="kid-chevron">⌄</span></summary><div class="kid-fold-body"><div class="card curriculum-card"><div class="library-panel-heading"><div><span class="eyebrow">CURRICULUM</span><h2>9개 연습 트랙 · 문제 구축 현황</h2></div></div><div class="curriculum-grid" id="curriculumGrid"></div><p class="tiny-help">46개 급·단급 선택은 유지됩니다. L1~L9는 학습용 연습 트랙이며, Go Game Guru 원본 문제를 임시로 나눈 것입니다. 아마·프로 단급 검증 또는 전문가의 사활 난이도 감수를 뜻하지 않습니다.</p></div></div></details><details class="kid-fold" id="kidLibraryTools"><summary><span>🛠️ 문제 검색·SGF 관리</span><span aria-hidden="true" class="kid-chevron">⌄</span></summary><div class="kid-fold-body"><div aria-label="문제 보관함 필터 및 SGF 관리" class="library-panel card">
+<div class="library-panel-heading"><div><span class="eyebrow">PROBLEM LIBRARY · STEP 05</span><h2>문제 라이브러리</h2><p>원본·응용 배치를 구분합니다. 실제 전문 기력별 난이도는 별도 검수가 필요합니다.</p></div><span class="board-size-pill" id="libraryTotal">35개 등록</span></div>
+<div class="library-filters">
+<label>기력 구간<select class="select-input" id="filterGroup"><option value="">전체 구간</option><option value="급수">급수</option><option value="아마">아마</option><option value="프로">프로</option></select></label>
+<label>세부 레벨<select class="select-input" id="filterLevel"><option value="">전체 난이도</option><option value="1">L1 · 30~21급 목표 (연습용)</option><option value="2">L2 · 20~11급 목표 (연습용)</option><option value="3">L3 · 10~1급 목표 (연습용)</option><option value="4">L4 · 아마 1~3단 목표 (연습용)</option><option value="5">L5 · 아마 4~5단 목표 (연습용)</option><option value="6">L6 · 아마 6~7단 목표 (연습용)</option><option value="7">L7 · 프로 1~3단 목표 (연습용)</option><option value="8">L8 · 프로 4~6단 목표 (연습용)</option><option value="9">L9 · 프로 7~9단 목표 (연습용)</option></select></label>
+<label>문제 유형<select class="select-input" id="filterCategory"><option value="">전체 유형</option></select></label>
+<label>문제 검색<input class="select-input" id="filterText" placeholder="제목·설명·유형 검색" type="search"/></label>
+</div>
+<div class="library-actions"><label class="library-check"><input id="filterOriginals" type="checkbox"/> 원본 문제만 보기</label><button class="btn btn-secondary btn-small" id="clearFilters" type="button">필터 초기화</button><span id="filterSummary" role="status">35개 문제</span></div>
+<div class="library-io"><label class="btn btn-secondary btn-small library-file-button" for="sgfFile">SGF 가져오기<input accept=".sgf,text/plain,application/x-go-sgf" id="sgfFile" type="file"/></label><button class="btn btn-secondary btn-small" id="exportSgf" type="button">현재 문제 SGF 저장</button><button class="btn btn-secondary btn-small" hidden="" id="deleteImported" type="button">현재 가져온 문제 삭제</button><span aria-live="polite" class="io-status" id="sgfMessage">앱 전용 목표·정답 태그가 포함된 SGF만 정답 검증 후 등록됩니다.</span></div>
+<details class="converter-lab" id="converterLab"><summary>🧪 외부 SGF 자동 변환 · 규칙 검사 (학습 콘텐츠 관리 도구)</summary>
+<p>SGF 파일을 분석하여 <strong>초기 배치·흑백 차례·변화도·정답 주석</strong>을 자동 추출합니다. 합법적인 수순만 확인하며 <strong>실제 두 집 사활의 정답, 공식 난이도, 저작권은 자동 검증하지 않습니다.</strong></p>
+<div class="pilot-pack"><strong>📘 집에서 푸는 사활 원정대 · 원본 문제 50개</strong>
+<p>Go Game Guru easy의 <strong>서로 다른 원본 배치 50개</strong>를 모았습니다(이전 15개 + 신규 35개). 정답 수순을 한국어로 안내하며 복수 정답도 보존했습니다. <strong>원본 주석을 바탕으로 한 가족 학습용 문제집</strong>으로, 공식 기력/완전한 사활 증명은 아닙니다.</p>
+<div class="pilot-actions"><button class="btn btn-primary btn-small" id="install50Pack" type="button">🎮 기존 50문제 확인 (422문제에 포함됨)</button>
+<button class="btn btn-secondary btn-small" id="loadPilotSamples" type="button">🔎 50개 원본 수순 검사하기</button></div>
+<span aria-live="polite" class="converter-status" id="packInstallStatus" role="status">문제집은 최초 1회만 추가하면 됩니다. 기존 35개 기본 배치는 그대로 유지됩니다. 전체 422문제 통합판에서는 중복 등록하지 않습니다.</span>
+<p class="tiny-help">제공: Go Game Guru · <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener noreferrer" target="_blank">CC BY-NC-SA 4.0</a> · 저작자 표시 · 비상업적 사용 · 동일조건변경허락. GitHub Pages 공개도 배포에 해당하므로 이 조건을 지켜야 합니다. 광고·유료 앱에 별도 허가 없이 사용할 수 없습니다.</p>
+</div>
+<label class="btn btn-secondary btn-small converter-picker" for="converterFiles">SGF 여러 개 선택 (최대 20개)<input accept=".sgf,application/x-go-sgf,text/plain" id="converterFiles" multiple="" type="file"/></label>
+<button class="btn btn-secondary btn-small" disabled="" id="converterReport" type="button">검사 결과 JSON 저장</button>
+<span aria-live="polite" class="converter-status" id="converterSummary" role="status">아직 검사한 파일이 없습니다.</span>
+<div class="converter-layout"><div aria-label="검사 대상 파일 목록" class="converter-file-list" id="converterList"></div>
+<div class="converter-detail" id="converterDetail"><p>파일을 선택하면 자동 검사 결과를 확인할 수 있습니다.</p></div></div>
+</details>
+</div></div></details></div></details></section>
       <section class="view" id="view-board" aria-labelledby="boardTitle">
         <div class="board-head"><div><div class="page-kicker">03 / RULES PLAYGROUND</div><h1 id="boardTitle">바둑판 연습</h1><p class="page-desc compact">돌을 놓고 규칙이 어떻게 적용되는지 확인해 보세요.</p></div><button type="button" class="btn btn-secondary" data-view="modes">연습 변경</button></div>
         <div class="board-layout">
@@ -621,7 +709,7 @@ body{background:#f5f7f1}
  <p class="tiny-help">원본 Go Game Guru에서는 원본이 실패라고 표시한 변화도만 실패로 기록합니다. 원본에 없는 합법적인 수나 규칙상 불가능한 착수는 오답으로 기록하지 않습니다. 공식 기력 판정이 아닙니다.</p>
  </section>
 
-      <section class="view" id="view-stats" aria-labelledby="statsTitle"><div class="page-kicker">06 / MY STATS</div><h1 id="statsTitle">학습 기록</h1><p class="page-desc">현재 기기에서 확인한 사활 풀이 결과만 집계합니다. 공식 기력 추정은 하지 않습니다.</p><div class="metrics"><div class="metric-card"><span>선택한 기력</span><strong id="statsRank">미설정</strong><small>직접 입력한 정보</small></div><div class="metric-card"><span>현재 연습 수순</span><strong id="statsMoves">0수</strong><small>현재 기기의 바둑판</small></div><div class="metric-card"><span>현재 따낸 돌</span><strong id="statsCaptured">0개</strong><small>흑·백 합계</small></div></div><div class="card adaptive-stats"><h3>🧠 맞춤 학습 분석</h3><div class="adaptive-stats-grid"><div><span>선택한 기력의 목표 구간</span><strong id="adaptiveStatsTarget">L1</strong></div><div><span>현재 추천 연습 구간</span><strong id="adaptiveStatsLevel">L1</strong></div><div><span>최근 10회 정답률</span><strong id="adaptiveStatsAccuracy">—</strong></div><div><span>서로 다른 문제 원형</span><strong id="adaptiveStatsMotifs">0종</strong></div></div><p id="adaptiveStatsExplanation" class="tiny-help">학습 성적과 내장 문제 범위를 구분해 안내합니다.</p></div><div class="card"><h3>사활 문제 풀이 기록</h3><div class="metrics puzzle-metrics"><div class="metric-card"><span>완료한 풀이</span><strong id="puzzleStatTotal">0회</strong><small>검증된 정답·실패만 기록</small></div><div class="metric-card"><span>정답 수</span><strong id="puzzleStatSolved">0회</strong><small>힌트 사용과 별개로 집계</small></div><div class="metric-card"><span>정답률</span><strong id="puzzleStatAccuracy">—</strong><small>완료한 시도 기준</small></div></div><div class="subtle-note">내장 원본 7개와 변형 28개는 입문·초급 연습입니다. 외부에서 등록한 문제의 난이도는 사용자 표시값이며, 공식 프로 기력 수준으로 인증된 것은 아닙니다.</div></div><section class="card report-card" id="stage11ReportCard" aria-labelledby="stage11ReportTitle"><div class="report-card-head"><div><span class="eyebrow">STEP 11 · LEARNING REPORT</span><h2 id="stage11ReportTitle">📊 나의 학습 리포트</h2><p class="tiny-help">이 기기에서 완료한 착수형 문제 기록만 집계합니다. 원본 SGF 판정과 공인 기력은 구분합니다.</p></div><button class="btn btn-secondary" type="button" id="stage11GoReview">↺ 복습하기</button></div>
+      <section class="view" id="view-stats" aria-labelledby="statsTitle"><div class="page-kicker">06 / MY STATS</div><h1 id="statsTitle">학습 기록</h1><p class="page-desc">현재 기기에서 확인한 사활 풀이 결과만 집계합니다. 공식 기력 추정은 하지 않습니다.</p><div class="metrics"><div class="metric-card"><span>선택한 기력</span><strong id="statsRank">미설정</strong><small>직접 입력한 정보</small></div><div class="metric-card"><span>현재 연습 수순</span><strong id="statsMoves">0수</strong><small>현재 기기의 바둑판</small></div><div class="metric-card"><span>현재 따낸 돌</span><strong id="statsCaptured">0개</strong><small>흑·백 합계</small></div></div><div class="card adaptive-stats"><h3>🧠 맞춤 학습 분석</h3><div class="adaptive-stats-grid"><div><span>선택한 기력의 목표 구간</span><strong id="adaptiveStatsTarget">L1</strong></div><div><span>현재 추천 연습 구간</span><strong id="adaptiveStatsLevel">L1</strong></div><div><span>최근 10회 정답률</span><strong id="adaptiveStatsAccuracy">—</strong></div><div><span>서로 다른 문제 원형</span><strong id="adaptiveStatsMotifs">0종</strong></div></div><p id="adaptiveStatsExplanation" class="tiny-help">학습 성적과 내장 문제 범위를 구분해 안내합니다.</p></div><div class="card"><h3>사활 문제 풀이 기록</h3><div class="metrics puzzle-metrics"><div class="metric-card"><span>완료한 풀이</span><strong id="puzzleStatTotal">0회</strong><small>검증된 정답·실패만 기록</small></div><div class="metric-card"><span>정답 수</span><strong id="puzzleStatSolved">0회</strong><small>힌트 사용과 별개로 집계</small></div><div class="metric-card"><span>정답률</span><strong id="puzzleStatAccuracy">—</strong><small>완료한 시도 기준</small></div></div><div class="subtle-note">기본 원형 7개와 변형 28개만 기초 엔진 검수·게임 보상에 반영됩니다. Go Game Guru의 연습용 L1~L9 배정은 공식 아마·프로 단급 수준으로 인정된 것이 아닙니다.</div></div><section class="card report-card" id="stage11ReportCard" aria-labelledby="stage11ReportTitle"><div class="report-card-head"><div><span class="eyebrow">STEP 11 · LEARNING REPORT</span><h2 id="stage11ReportTitle">📊 나의 학습 리포트</h2><p class="tiny-help">이 기기에서 완료한 착수형 문제 기록만 집계합니다. 원본 SGF 판정과 공인 기력은 구분합니다.</p></div><button class="btn btn-secondary" type="button" id="stage11GoReview">↺ 복습하기</button></div>
 <div class="review-metrics report-metrics"><div><small>완료 시도</small><strong id="stage11Total">0</strong></div><div><small>힌트 없이 성공</small><strong id="stage11Clean">0</strong></div><div><small>도움 받고 성공</small><strong id="stage11Assisted">0</strong></div><div><small>확인된 실패</small><strong id="stage11Failed">0</strong></div></div>
 <p id="stage11Rate" class="report-subtitle" aria-live="polite">아직 풀이 기록이 없어요.</p>
 <h3>최근 7일 학습</h3><div id="stage11WeekChart" class="report-trend" role="img" aria-label="최근 7일간 시도 결과 막대 그래프"></div>
@@ -1268,6 +1356,58 @@ return {problems,lessons,transform,rankGroup,query,counts};
 
 </script>
 <script>
+/* Educational practice-track mapping, NOT certified Go rank difficulty.
+ * Derived by sorting within each original source category by SGF move-node,
+ * branch, setup-stone and tactic-comment workload indicators.
+ * Original CC BY-NC-SA 4.0 data; no strategic proof is implied. */
+(function(root,factory){const api=factory();if(typeof module==='object'&&module.exports)module.exports=api;if(root)root.GoCurriculumMap=api;})(typeof globalThis!=='undefined'?globalThis:this,function(){return Object.freeze({"easy/ggg-easy-21.sgf":1,"easy/ggg-easy-06.sgf":1,"easy/ggg-easy-25.sgf":1,"easy/ggg-easy-15.sgf":1,"easy/ggg-easy-20.sgf":1,"easy/ggg-easy-10.sgf":1,"easy/ggg-easy-11.sgf":1,"easy/ggg-easy-13.sgf":1,"easy/ggg-easy-47.sgf":1,"easy/ggg-easy-61.sgf":1,"easy/ggg-easy-89.sgf":1,"easy/ggg-easy-02.sgf":1,"easy/ggg-easy-05.sgf":1,"easy/ggg-easy-35.sgf":1,"easy/ggg-easy-87.sgf":1,"easy/ggg-easy-04.sgf":1,"easy/ggg-easy-71.sgf":1,"easy/ggg-easy-105.sgf":1,"easy/ggg-easy-76.sgf":1,"easy/ggg-easy-67.sgf":1,"easy/ggg-easy-09.sgf":1,"easy/ggg-easy-72.sgf":1,"easy/ggg-easy-33.sgf":1,"easy/ggg-easy-27.sgf":1,"easy/ggg-easy-60.sgf":1,"easy/ggg-easy-75.sgf":1,"easy/ggg-easy-115.sgf":1,"easy/ggg-easy-86.sgf":1,"easy/ggg-easy-16.sgf":1,"easy/ggg-easy-82.sgf":1,"easy/ggg-easy-93.sgf":1,"easy/ggg-easy-14.sgf":1,"easy/ggg-easy-65.sgf":1,"easy/ggg-easy-07.sgf":1,"easy/ggg-easy-12.sgf":1,"easy/ggg-easy-68.sgf":2,"easy/ggg-easy-48.sgf":2,"easy/ggg-easy-03.sgf":2,"easy/ggg-easy-74.sgf":2,"easy/ggg-easy-66.sgf":2,"easy/ggg-easy-58.sgf":2,"easy/ggg-easy-70.sgf":2,"easy/ggg-easy-53.sgf":2,"easy/ggg-easy-38.sgf":2,"easy/ggg-easy-99.sgf":2,"easy/ggg-easy-22.sgf":2,"easy/ggg-easy-110.sgf":2,"easy/ggg-easy-104.sgf":2,"easy/ggg-easy-01.sgf":2,"easy/ggg-easy-31.sgf":2,"easy/ggg-easy-90.sgf":2,"easy/ggg-easy-23.sgf":2,"easy/ggg-easy-121.sgf":2,"easy/ggg-easy-26.sgf":2,"easy/ggg-easy-103.sgf":2,"easy/ggg-easy-78.sgf":2,"easy/ggg-easy-88.sgf":2,"easy/ggg-easy-34.sgf":2,"easy/ggg-easy-44.sgf":2,"easy/ggg-easy-64.sgf":2,"easy/ggg-easy-17.sgf":2,"easy/ggg-easy-77.sgf":2,"easy/ggg-easy-46.sgf":2,"easy/ggg-easy-140.sgf":2,"easy/ggg-easy-56.sgf":2,"easy/ggg-easy-50.sgf":2,"easy/ggg-easy-36.sgf":2,"easy/ggg-easy-29.sgf":2,"easy/ggg-easy-139.sgf":2,"easy/ggg-easy-73.sgf":2,"easy/ggg-easy-69.sgf":2,"easy/ggg-easy-119.sgf":2,"easy/ggg-easy-30.sgf":2,"easy/ggg-easy-83.sgf":2,"easy/ggg-easy-120.sgf":2,"easy/ggg-easy-130.sgf":2,"easy/ggg-easy-117.sgf":2,"easy/ggg-easy-54.sgf":2,"easy/ggg-easy-40.sgf":2,"easy/ggg-easy-97.sgf":2,"easy/ggg-easy-39.sgf":2,"easy/ggg-easy-37.sgf":2,"easy/ggg-easy-96.sgf":2,"easy/ggg-easy-101.sgf":2,"easy/ggg-easy-63.sgf":2,"easy/ggg-easy-129.sgf":3,"easy/ggg-easy-19.sgf":3,"easy/ggg-easy-113.sgf":3,"easy/ggg-easy-109.sgf":3,"easy/ggg-easy-135.sgf":3,"easy/ggg-easy-62.sgf":3,"easy/ggg-easy-122.sgf":3,"easy/ggg-easy-128.sgf":3,"easy/ggg-easy-81.sgf":3,"easy/ggg-easy-91.sgf":3,"easy/ggg-easy-18.sgf":3,"easy/ggg-easy-92.sgf":3,"easy/ggg-easy-124.sgf":3,"easy/ggg-easy-138.sgf":3,"easy/ggg-easy-55.sgf":3,"easy/ggg-easy-59.sgf":3,"easy/ggg-easy-114.sgf":3,"easy/ggg-easy-51.sgf":3,"easy/ggg-easy-79.sgf":3,"easy/ggg-easy-42.sgf":3,"easy/ggg-easy-127.sgf":3,"easy/ggg-easy-52.sgf":3,"easy/ggg-easy-24.sgf":3,"easy/ggg-easy-125.sgf":3,"easy/ggg-easy-112.sgf":3,"easy/ggg-easy-123.sgf":3,"easy/ggg-easy-08.sgf":3,"easy/ggg-easy-132.sgf":3,"easy/ggg-easy-107.sgf":3,"easy/ggg-easy-94.sgf":3,"easy/ggg-easy-136.sgf":3,"easy/ggg-easy-106.sgf":3,"easy/ggg-easy-49.sgf":3,"easy/ggg-easy-45.sgf":3,"easy/ggg-easy-131.sgf":3,"easy/ggg-easy-116.sgf":3,"easy/ggg-easy-126.sgf":3,"easy/ggg-easy-28.sgf":3,"easy/ggg-easy-134.sgf":3,"easy/ggg-easy-100.sgf":3,"easy/ggg-easy-133.sgf":3,"easy/ggg-easy-95.sgf":3,"easy/ggg-easy-102.sgf":3,"easy/ggg-easy-118.sgf":3,"easy/ggg-easy-98.sgf":3,"easy/ggg-easy-84.sgf":3,"easy/ggg-easy-80.sgf":3,"easy/ggg-easy-43.sgf":3,"easy/ggg-easy-108.sgf":3,"easy/ggg-easy-85.sgf":3,"easy/ggg-easy-111.sgf":3,"easy/ggg-easy-137.sgf":3,"easy/ggg-easy-32.sgf":3,"easy/ggg-easy-57.sgf":3,"easy/ggg-easy-41.sgf":3,"intermediate/ggg-intermediate-06.sgf":3,"intermediate/ggg-intermediate-38.sgf":3,"intermediate/ggg-intermediate-11.sgf":3,"intermediate/ggg-intermediate-13.sgf":3,"intermediate/ggg-intermediate-23.sgf":3,"intermediate/ggg-intermediate-20.sgf":3,"intermediate/ggg-intermediate-68.sgf":3,"intermediate/ggg-intermediate-89.sgf":3,"intermediate/ggg-intermediate-04.sgf":3,"intermediate/ggg-intermediate-03.sgf":3,"intermediate/ggg-intermediate-47.sgf":3,"intermediate/ggg-intermediate-10.sgf":3,"intermediate/ggg-intermediate-39.sgf":3,"intermediate/ggg-intermediate-02.sgf":3,"intermediate/ggg-intermediate-07.sgf":3,"intermediate/ggg-intermediate-110.sgf":3,"intermediate/ggg-intermediate-15.sgf":3,"intermediate/ggg-intermediate-132.sgf":3,"intermediate/ggg-intermediate-76.sgf":3,"intermediate/ggg-intermediate-61.sgf":3,"intermediate/ggg-intermediate-50.sgf":3,"intermediate/ggg-intermediate-09.sgf":3,"intermediate/ggg-intermediate-109.sgf":3,"intermediate/ggg-intermediate-33.sgf":3,"intermediate/ggg-intermediate-111.sgf":3,"intermediate/ggg-intermediate-43.sgf":4,"intermediate/ggg-intermediate-17.sgf":4,"intermediate/ggg-intermediate-27.sgf":4,"intermediate/ggg-intermediate-05.sgf":4,"intermediate/ggg-intermediate-106.sgf":4,"intermediate/ggg-intermediate-16.sgf":4,"intermediate/ggg-intermediate-59.sgf":4,"intermediate/ggg-intermediate-45.sgf":4,"intermediate/ggg-intermediate-115.sgf":4,"intermediate/ggg-intermediate-74.sgf":4,"intermediate/ggg-intermediate-24.sgf":4,"intermediate/ggg-intermediate-124.sgf":4,"intermediate/ggg-intermediate-86.sgf":4,"intermediate/ggg-intermediate-30.sgf":4,"intermediate/ggg-intermediate-56.sgf":4,"intermediate/ggg-intermediate-12.sgf":4,"intermediate/ggg-intermediate-19.sgf":4,"intermediate/ggg-intermediate-71.sgf":4,"intermediate/ggg-intermediate-14.sgf":4,"intermediate/ggg-intermediate-31.sgf":4,"intermediate/ggg-intermediate-102.sgf":4,"intermediate/ggg-intermediate-94.sgf":4,"intermediate/ggg-intermediate-22.sgf":4,"intermediate/ggg-intermediate-73.sgf":4,"intermediate/ggg-intermediate-70.sgf":4,"intermediate/ggg-intermediate-84.sgf":4,"intermediate/ggg-intermediate-62.sgf":4,"intermediate/ggg-intermediate-96.sgf":4,"intermediate/ggg-intermediate-52.sgf":4,"intermediate/ggg-intermediate-103.sgf":4,"intermediate/ggg-intermediate-93.sgf":4,"intermediate/ggg-intermediate-95.sgf":4,"intermediate/ggg-intermediate-28.sgf":4,"intermediate/ggg-intermediate-135.sgf":4,"intermediate/ggg-intermediate-54.sgf":4,"intermediate/ggg-intermediate-123.sgf":5,"intermediate/ggg-intermediate-116.sgf":5,"intermediate/ggg-intermediate-66.sgf":5,"intermediate/ggg-intermediate-63.sgf":5,"intermediate/ggg-intermediate-120.sgf":5,"intermediate/ggg-intermediate-114.sgf":5,"intermediate/ggg-intermediate-75.sgf":5,"intermediate/ggg-intermediate-99.sgf":5,"intermediate/ggg-intermediate-87.sgf":5,"intermediate/ggg-intermediate-138.sgf":5,"intermediate/ggg-intermediate-101.sgf":5,"intermediate/ggg-intermediate-85.sgf":5,"intermediate/ggg-intermediate-134.sgf":5,"intermediate/ggg-intermediate-55.sgf":5,"intermediate/ggg-intermediate-01.sgf":5,"intermediate/ggg-intermediate-51.sgf":5,"intermediate/ggg-intermediate-137.sgf":5,"intermediate/ggg-intermediate-119.sgf":5,"intermediate/ggg-intermediate-113.sgf":5,"intermediate/ggg-intermediate-121.sgf":5,"intermediate/ggg-intermediate-36.sgf":5,"intermediate/ggg-intermediate-88.sgf":5,"intermediate/ggg-intermediate-129.sgf":5,"intermediate/ggg-intermediate-97.sgf":5,"intermediate/ggg-intermediate-26.sgf":5,"intermediate/ggg-intermediate-40.sgf":5,"intermediate/ggg-intermediate-122.sgf":5,"intermediate/ggg-intermediate-44.sgf":5,"intermediate/ggg-intermediate-21.sgf":5,"intermediate/ggg-intermediate-112.sgf":5,"intermediate/ggg-intermediate-34.sgf":5,"intermediate/ggg-intermediate-140.sgf":5,"intermediate/ggg-intermediate-131.sgf":5,"intermediate/ggg-intermediate-72.sgf":5,"intermediate/ggg-intermediate-126.sgf":5,"intermediate/ggg-intermediate-48.sgf":5,"intermediate/ggg-intermediate-83.sgf":5,"intermediate/ggg-intermediate-37.sgf":5,"intermediate/ggg-intermediate-18.sgf":5,"intermediate/ggg-intermediate-08.sgf":5,"intermediate/ggg-intermediate-29.sgf":6,"intermediate/ggg-intermediate-58.sgf":6,"intermediate/ggg-intermediate-105.sgf":6,"intermediate/ggg-intermediate-91.sgf":6,"intermediate/ggg-intermediate-60.sgf":6,"intermediate/ggg-intermediate-136.sgf":6,"intermediate/ggg-intermediate-133.sgf":6,"intermediate/ggg-intermediate-65.sgf":6,"intermediate/ggg-intermediate-108.sgf":6,"intermediate/ggg-intermediate-104.sgf":6,"intermediate/ggg-intermediate-77.sgf":6,"intermediate/ggg-intermediate-25.sgf":6,"intermediate/ggg-intermediate-92.sgf":6,"intermediate/ggg-intermediate-81.sgf":6,"intermediate/ggg-intermediate-78.sgf":6,"intermediate/ggg-intermediate-46.sgf":6,"intermediate/ggg-intermediate-128.sgf":6,"intermediate/ggg-intermediate-139.sgf":6,"intermediate/ggg-intermediate-64.sgf":6,"intermediate/ggg-intermediate-80.sgf":6,"intermediate/ggg-intermediate-79.sgf":6,"intermediate/ggg-intermediate-107.sgf":6,"intermediate/ggg-intermediate-82.sgf":6,"intermediate/ggg-intermediate-57.sgf":6,"intermediate/ggg-intermediate-69.sgf":6,"intermediate/ggg-intermediate-53.sgf":6,"intermediate/ggg-intermediate-41.sgf":6,"intermediate/ggg-intermediate-118.sgf":6,"intermediate/ggg-intermediate-35.sgf":6,"intermediate/ggg-intermediate-127.sgf":6,"intermediate/ggg-intermediate-90.sgf":6,"intermediate/ggg-intermediate-42.sgf":6,"intermediate/ggg-intermediate-32.sgf":6,"intermediate/ggg-intermediate-67.sgf":6,"intermediate/ggg-intermediate-98.sgf":6,"intermediate/ggg-intermediate-130.sgf":6,"intermediate/ggg-intermediate-117.sgf":6,"intermediate/ggg-intermediate-125.sgf":6,"intermediate/ggg-intermediate-49.sgf":6,"intermediate/ggg-intermediate-100.sgf":6,"hard/ggg-hard-09.sgf":6,"hard/ggg-hard-03.sgf":6,"hard/ggg-hard-04.sgf":6,"hard/ggg-hard-65.sgf":6,"hard/ggg-hard-02.sgf":6,"hard/ggg-hard-84.sgf":6,"hard/ggg-hard-58.sgf":6,"hard/ggg-hard-66.sgf":6,"hard/ggg-hard-72.sgf":6,"hard/ggg-hard-61.sgf":6,"hard/ggg-hard-124.sgf":6,"hard/ggg-hard-113.sgf":6,"hard/ggg-hard-08.sgf":6,"hard/ggg-hard-86.sgf":6,"hard/ggg-hard-76.sgf":6,"hard/ggg-hard-75.sgf":6,"hard/ggg-hard-01.sgf":6,"hard/ggg-hard-24.sgf":6,"hard/ggg-hard-85.sgf":6,"hard/ggg-hard-89.sgf":6,"hard/ggg-hard-88.sgf":6,"hard/ggg-hard-67.sgf":6,"hard/ggg-hard-126.sgf":6,"hard/ggg-hard-63.sgf":6,"hard/ggg-hard-106.sgf":6,"hard/ggg-hard-122.sgf":7,"hard/ggg-hard-98.sgf":7,"hard/ggg-hard-31.sgf":7,"hard/ggg-hard-06.sgf":7,"hard/ggg-hard-94.sgf":7,"hard/ggg-hard-135.sgf":7,"hard/ggg-hard-21.sgf":7,"hard/ggg-hard-138.sgf":7,"hard/ggg-hard-60.sgf":7,"hard/ggg-hard-90.sgf":7,"hard/ggg-hard-10.sgf":7,"hard/ggg-hard-103.sgf":7,"hard/ggg-hard-99.sgf":7,"hard/ggg-hard-73.sgf":7,"hard/ggg-hard-12.sgf":7,"hard/ggg-hard-39.sgf":7,"hard/ggg-hard-13.sgf":7,"hard/ggg-hard-29.sgf":7,"hard/ggg-hard-129.sgf":7,"hard/ggg-hard-92.sgf":7,"hard/ggg-hard-123.sgf":7,"hard/ggg-hard-64.sgf":7,"hard/ggg-hard-101.sgf":7,"hard/ggg-hard-28.sgf":7,"hard/ggg-hard-69.sgf":7,"hard/ggg-hard-19.sgf":7,"hard/ggg-hard-128.sgf":7,"hard/ggg-hard-11.sgf":7,"hard/ggg-hard-42.sgf":7,"hard/ggg-hard-74.sgf":7,"hard/ggg-hard-91.sgf":7,"hard/ggg-hard-14.sgf":7,"hard/ggg-hard-118.sgf":7,"hard/ggg-hard-111.sgf":7,"hard/ggg-hard-48.sgf":7,"hard/ggg-hard-87.sgf":8,"hard/ggg-hard-62.sgf":8,"hard/ggg-hard-120.sgf":8,"hard/ggg-hard-20.sgf":8,"hard/ggg-hard-130.sgf":8,"hard/ggg-hard-15.sgf":8,"hard/ggg-hard-30.sgf":8,"hard/ggg-hard-127.sgf":8,"hard/ggg-hard-68.sgf":8,"hard/ggg-hard-95.sgf":8,"hard/ggg-hard-102.sgf":8,"hard/ggg-hard-34.sgf":8,"hard/ggg-hard-26.sgf":8,"hard/ggg-hard-93.sgf":8,"hard/ggg-hard-83.sgf":8,"hard/ggg-hard-71.sgf":8,"hard/ggg-hard-23.sgf":8,"hard/ggg-hard-97.sgf":8,"hard/ggg-hard-53.sgf":8,"hard/ggg-hard-47.sgf":8,"hard/ggg-hard-125.sgf":8,"hard/ggg-hard-140.sgf":8,"hard/ggg-hard-56.sgf":8,"hard/ggg-hard-41.sgf":8,"hard/ggg-hard-55.sgf":8,"hard/ggg-hard-36.sgf":8,"hard/ggg-hard-136.sgf":8,"hard/ggg-hard-17.sgf":8,"hard/ggg-hard-16.sgf":8,"hard/ggg-hard-121.sgf":8,"hard/ggg-hard-119.sgf":8,"hard/ggg-hard-115.sgf":8,"hard/ggg-hard-46.sgf":8,"hard/ggg-hard-79.sgf":8,"hard/ggg-hard-139.sgf":8,"hard/ggg-hard-25.sgf":8,"hard/ggg-hard-38.sgf":8,"hard/ggg-hard-22.sgf":8,"hard/ggg-hard-37.sgf":8,"hard/ggg-hard-131.sgf":8,"hard/ggg-hard-27.sgf":9,"hard/ggg-hard-108.sgf":9,"hard/ggg-hard-54.sgf":9,"hard/ggg-hard-78.sgf":9,"hard/ggg-hard-45.sgf":9,"hard/ggg-hard-96.sgf":9,"hard/ggg-hard-112.sgf":9,"hard/ggg-hard-70.sgf":9,"hard/ggg-hard-109.sgf":9,"hard/ggg-hard-137.sgf":9,"hard/ggg-hard-77.sgf":9,"hard/ggg-hard-134.sgf":9,"hard/ggg-hard-35.sgf":9,"hard/ggg-hard-114.sgf":9,"hard/ggg-hard-132.sgf":9,"hard/ggg-hard-18.sgf":9,"hard/ggg-hard-50.sgf":9,"hard/ggg-hard-80.sgf":9,"hard/ggg-hard-100.sgf":9,"hard/ggg-hard-40.sgf":9,"hard/ggg-hard-52.sgf":9,"hard/ggg-hard-07.sgf":9,"hard/ggg-hard-81.sgf":9,"hard/ggg-hard-51.sgf":9,"hard/ggg-hard-44.sgf":9,"hard/ggg-hard-05.sgf":9,"hard/ggg-hard-82.sgf":9,"hard/ggg-hard-32.sgf":9,"hard/ggg-hard-110.sgf":9,"hard/ggg-hard-33.sgf":9,"hard/ggg-hard-59.sgf":9,"hard/ggg-hard-117.sgf":9,"hard/ggg-hard-116.sgf":9,"hard/ggg-hard-104.sgf":9,"hard/ggg-hard-43.sgf":9,"hard/ggg-hard-57.sgf":9,"hard/ggg-hard-49.sgf":9,"hard/ggg-hard-105.sgf":9,"hard/ggg-hard-107.sgf":9,"hard/ggg-hard-133.sgf":9,"other/ggg-eternal-life.sgf":4});});
+
+</script>
+<script>
+/* Go Life Lab 12: nine educational PRACTICE TRACKS. These levels are never
+ * certified kyu/amateur/pro grades; source annotations do not prove life/death. */
+(function(root,factory){const api=factory(root.GoCurriculumMap||{});if(typeof module==='object'&&module.exports)module.exports=api;if(root)root.GoCurriculum=api;})(typeof globalThis!=='undefined'?globalThis:this,function(MAP){'use strict';
+const LABELS=['30~21급 목표','20~11급 목표','10~1급 목표','아마 1~3단 목표','아마 4~5단 목표','아마 6~7단 목표','프로 1~3단 목표','프로 4~6단 목표','프로 7~9단 목표'];
+const SOURCE_NAMES={easy:'원본 쉬움',intermediate:'원본 중간',hard:'원본 어려움',other:'원본 특별'};
+function pathKey(p){
+ const path=String(p?.sourcePath||p?.provenance?.sourceUrl||'');const match=path.match(/weekly-go-problems\/(easy|intermediate|hard|other)\/([^/?#]+\.sgf)/);
+ return match?match[1]+'/'+match[2]:null;
+}
+function assignedLevel(key){const n=MAP[key];return Number.isInteger(n)&&n>=1&&n<=9?n:null;}
+function practiceInfo(p){if(!p)return null;
+ if(p.source==='built-in'&&p.reviewStatus==='engine-verified'&&Number.isInteger(p.level)&&p.level>=1&&p.level<=9)return {level:p.level,kind:'verified-basic',source:'기초 엔진 검수'};
+ if(p.catalogPack!=='ggg-full-2026'||p.reviewStatus!=='source-annotated-unverified')return null;
+ const key=pathKey(p);const level=assignedLevel(key);if(level===null)return null;
+ const group=key.split('/')[0];return {level,kind:'source-practice',source:SOURCE_NAMES[group]||'원본 SGF',key};
+}
+function forLevel(problems,level){if(!Number.isInteger(level)||level<1||level>9)return [];
+ return (Array.isArray(problems)?problems:[]).filter(p=>practiceInfo(p)?.level===level);
+}
+function coverage(problems){return LABELS.map((label,i)=>{const rows=forLevel(problems,i+1);const base=rows.filter(p=>practiceInfo(p)?.kind==='verified-basic').length;
+ return {level:i+1,label,count:rows.length,verified:base,provisional:rows.length-base,available:rows.length>0};});}
+function resultsClean(results,problems,level){const ids=new Set(forLevel(problems,level).map(p=>p.id));const clean=new Set();
+ for(const r of results||[])if(r&&ids.has(r.id)&&r.result==='success'&&r.hint!==true&&r.clean===true)clean.add(r.id);
+ return clean.size;}
+function autoLevel({diagnostic=null,results=[],problems=[]}={}){
+ const clean=diagnostic?.done===true&&Array.isArray(diagnostic.answers)?diagnostic.answers.filter(x=>x?.result==='success'&&x.hint!==true).length:0;
+ if(!diagnostic?.done)return {level:1,reason:'기초 5문제 점검부터 시작해요. L1의 검증된 기본 연습을 먼저 추천합니다.',stage:'diagnostic'};
+ if(clean<4)return {level:1,reason:`기초 점검에서 힌트 없이 ${clean}/5개 성공했어요. L1에서 다시 연습해요.`,stage:'foundation'};
+ let level=2;while(level<9&&resultsClean(results,problems,level)>=6&&forLevel(problems,level+1).length)level++;
+ const n=resultsClean(results,problems,level);
+ return {level,reason:`기초 점검 ${clean}/5개 힌트 없이 성공 · L${level}에서 학습해요. 이 구간의 서로 다른 문제 ${n}개를 도움 없이 성공하면 다음 연습 트랙을 추천합니다. 공식 기력 판정은 아닙니다.`,stage:'practice'};
+}
+function recommend({level,problems=[],results=[],avoidId=null}={}){
+ const items=forLevel(problems,level);if(!items.length)return {problem:null,count:0,unseen:0};
+ const attempts=new Map(),solved=new Set();for(const r of results){if(!r||!r.id)continue;attempts.set(r.id,(attempts.get(r.id)||0)+1);if(r.result==='success')solved.add(r.id);}
+ const ordered=items.map(p=>({p,n:attempts.get(p.id)||0,solved:solved.has(p.id),same:p.id===avoidId,base:p.source==='built-in',variant:!!p.variantOf})).sort((a,b)=>
+  Number(a.solved)-Number(b.solved)||Number(a.same)-Number(b.same)||a.n-b.n||Number(b.base)-Number(a.base)||Number(a.variant)-Number(b.variant)||a.p.id.localeCompare(b.p.id));
+ return {problem:ordered[0]?.p||null,count:items.length,unseen:items.length-solved.size};
+}
+return {LABELS,SOURCE_NAMES,pathKey,assignedLevel,practiceInfo,forLevel,coverage,resultsClean,autoLevel,recommend};
+});
+
+</script>
+<script>
 /* SGF FF[4] scoped interchange. No generic game-to-tsumego inference: explicit GLL goals and terminal labels required. */
 (function(root,factory){const rules=typeof require==='function'?require('./rules.js'):root.GoRules;const tsumego=typeof require==='function'?require('./tsumego.js'):root.GoTsumego;const api=factory(rules,tsumego);if(typeof module==='object'&&module.exports)module.exports=api;if(root)root.GoSGF=api;})(typeof globalThis!=='undefined'?globalThis:this,function(rules,tsumego){
 'use strict';
@@ -1476,7 +1616,8 @@ function renderPuzzle(){
  byId('puzzleTeaching').textContent=p.teaching;
  const credit=byId('puzzleSourceCredit');credit.replaceChildren();credit.hidden=p.source!=='import';
  if(!credit.hidden){
-  const note=document.createElement('small');note.textContent='외부 SGF · 원본 주석만 검토 · 기력과 사활 정답 미인증';credit.append(note);
+  const track=window.GoCurriculum?.practiceInfo(p);
+  const note=document.createElement('small');note.textContent=track?.kind==='source-practice'?`L${track.level} 연습 트랙 · ${track.source} · 공식 급·단급/사활 정답 독립 인증 아님`:'외부 SGF · 원본 주석만 검토 · 기력과 사활 정답 미인증';credit.append(note);
   const copyright=p.provenance?.copyright;if(copyright){const licence=document.createElement('small');licence.textContent=copyright;credit.append(licence);}
   const url=p.provenance?.sourceUrl;
   if((copyright||'').includes('CC BY-NC-SA 4.0')){const terms=document.createElement('a');terms.href='https://creativecommons.org/licenses/by-nc-sa/4.0/';terms.target='_blank';terms.rel='noopener noreferrer';terms.textContent='콘텐츠 라이선스 보기';credit.append(terms);}
@@ -1509,7 +1650,8 @@ function renderProblemList(){
   const num=document.createElement('span');num.className='number';num.textContent=String(i+1).padStart(2,'0');
   const info=document.createElement('span');info.style.minWidth='0';
   const strong=document.createElement('strong');strong.textContent=p.title;
-  const small=document.createElement('small');small.textContent=`${p.rank} · ${p.category}${p.variantOf?' · 회전/색상 응용':''}${p.source==='import'?' · 사용자 SGF':''}`;
+  const track=window.GoCurriculum?.practiceInfo(p);
+  const small=document.createElement('small');small.textContent=`${track?.kind==='source-practice'?`연습용 L${track.level} · `:''}${p.rank} · ${p.category}${p.variantOf?' · 회전/색상 응용':''}${p.source==='import'&&!p.catalogPack?' · 사용자 SGF':''}`;
   const mark=document.createElement('span');mark.className='status';mark.textContent=own.some(r=>r.result==='success')?'✓ 풀었음':own.length?'↺ 복습':'미풀이';
   info.append(strong,small);b.append(num,info,mark);container.append(b);
  }
@@ -1663,11 +1805,17 @@ function refreshCategories(){const current=byId('filterCategory').value;const ca
  sel.value=cats.includes(current)?current:'';filters.category=sel.value;
 }
 function refreshCurriculum(){const mount=byId('curriculumGrid');mount.replaceChildren();
- for(const l of sourceLibrary.counts(problems.filter(p=>p.reviewStatus==='engine-verified'))){
-  const b=document.createElement('button');b.type='button';b.className='curriculum-step'+(l.count?'':' empty');b.dataset.curriculum=String(l.level);
-  const lv=document.createElement('span');lv.className='lvl';lv.textContent='L'+l.level;
-  const detail=document.createElement('span');const title=document.createElement('strong');title.textContent=`${l.group} · ${l.range}`;const hint=document.createElement('small');hint.textContent=l.topics.join(' / ');detail.append(title,hint);
-  const count=document.createElement('span');count.className='count';count.textContent=l.count?l.count+'개':'미구축';b.append(lv,detail,count);mount.append(b);
+ const curriculum=window.GoCurriculum;
+ const stats=curriculum?curriculum.coverage(problems):sourceLibrary.counts(problems).map(x=>({level:x.level,count:x.count,verified:x.count,provisional:0}));
+ for(const row of stats){const l=sourceLibrary.lessons[row.level-1];
+  const b=document.createElement('button');b.type='button';b.className='curriculum-step'+(row.count?'':' empty');b.dataset.curriculum=String(row.level);
+  const lv=document.createElement('span');lv.className='lvl';lv.textContent='L'+row.level;
+  const detail=document.createElement('span');const title=document.createElement('strong');title.textContent=`${l.group} · ${l.range} 목표`;
+  const hint=document.createElement('small');hint.textContent=l.topics.join(' / ')+' · 목표 기력 인증 아님';
+  const makeup=document.createElement('small');makeup.className='curriculum-count-detail';makeup.textContent=`기초 검수 ${row.verified} · 원본 임시 연습 ${row.provisional}`;
+  detail.append(title,hint,makeup);
+  const count=document.createElement('span');count.className='count';count.textContent=row.count?`연습 ${row.count}개`:'준비 중';
+  b.append(lv,detail,count);mount.append(b);
  }
 }
 function applyFilters(selectMatching=true){listPage=0;refreshPicker();renderProblemList();if(selectMatching){const matches=filtered();if(matches.length&&!matches.includes(problems[index]))chooseProblem(problems.indexOf(matches[0]),false);} }
@@ -1683,8 +1831,8 @@ byId('clearFilters').addEventListener('click',()=>{filters={group:'',level:'',ca
  for(const id of ['filterGroup','filterLevel','filterCategory','filterText'])byId(id).value='';byId('filterOriginals').checked=false;applyFilters();});
 byId('curriculumGrid').addEventListener('click',e=>{const b=e.target.closest('[data-curriculum]');if(!b)return;
  const lev=Number(b.dataset.curriculum);byId('filterLevel').value=String(lev);filters.level=String(lev);filters.group='';byId('filterGroup').value='';applyFilters();
- if(!filtered().length)showSgfMessage(`L${lev} 구간은 아직 내장 검수 문제가 없습니다. 이 레벨의 SGF를 가져올 수 있습니다.`,false);
- ui.showView('tsumego');});
+ const selected=filtered()[0];if(selected){showSgfMessage(`L${lev} 연습 트랙 문제를 열었어요. Go Game Guru 출처 난이도는 공식 기력이 아닙니다.`,false);chooseProblem(problems.indexOf(selected));}
+ else {showSgfMessage(`L${lev}의 연습 문제가 아직 준비되지 않았습니다.`,false);ui.showView('tsumego');}});
 function storeImports(){try{localStorage.setItem(importKey,JSON.stringify(problems.filter(p=>p.source==='import'&&!p.catalogPack)));return true;}catch{return false;}}
 function renderImportButton(){const p=problems[index];byId('deleteImported').hidden=p.source!=='import'||!!p.catalogPack;}
 byId('sgfFile').addEventListener('change',async e=>{
@@ -2249,10 +2397,17 @@ let feedback='';
 function prefs(){return app.getPrefs();}
 function input(){const ps=prefs();return {rank:ps.rank,adaptive:ps.adaptive,manualLevel,results:puzzles.getResults(),problems:puzzles.getProblems(),diagnostic,avoidId:puzzles.getCurrent()?.id};}
 function report(message){feedback=message;byId('adaptiveFeedback').textContent=feedback;}
-function runRecommendation(){const outcome=model.recommend(input());const {state,problem}=outcome;
- if(!problem){report(state.reason+' 직접 문제 목록에서 다른 수준을 살펴볼 수 있어요.');app.showView('tsumego');render();return false;}
- if(diagnostic?.active){report('기초 점검을 진행 중이에요. 점검을 끝내고 자동 추천을 이용하거나, 점검 문제를 이어 풀어 보세요.');return startDiagnosticStep();}
- puzzles.chooseById(problem.id);report(`🎯 ${problem.category} · 「${problem.title}」 문제를 골랐어요. ${state.reason}`);render();return true;
+function trackTarget(){const curr=window.GoCurriculum,ps=prefs(),all=puzzles.getProblems();
+ const auto=curr?.autoLevel({diagnostic,results:window.GoLifeStage10?.getPracticeRows?.()||[],problems:all})||{level:1,reason:'기초부터 시작해요.'};
+ return {level:ps.adaptive?auto.level:manualLevel,reason:ps.adaptive?auto.reason:`L${manualLevel} 연습 트랙을 직접 선택했어요. 목표 급·단급과 실제 사활 난이도 인증은 다릅니다.`};}
+function runRecommendation(){
+ if(diagnostic?.active){report('기초 5문제 점검을 이어서 풀어요.');return startDiagnosticStep();}
+ const curr=window.GoCurriculum,target=trackTarget();
+ const out=curr?.recommend({level:target.level,problems:puzzles.getProblems(),results:puzzles.getResults(),avoidId:puzzles.getCurrent()?.id});
+ if(!out?.problem){report(`L${target.level}의 연습 문제가 아직 준비되지 않았어요. 데이터를 확인하거나 다른 구간을 선택해 주세요.`);app.showView('tsumego');render();return false;}
+ const ok=puzzles.chooseById(out.problem.id);
+ if(!ok){report('문제를 열지 못했습니다. 다시 시도해 주세요.');return false;}
+ report(`🎯 연습용 L${target.level} · 「${out.problem.title}」 문제를 열었어요. 공식 기력 판정은 아니에요.`);render();return true;
 }
 function nextLearningProblem(){
  if(diagnostic?.active){
@@ -2292,40 +2447,42 @@ function updateSettingsAdaptive(enabled){
  render();
 }
 function render(){
- const out=model.recommend(input());const st=out.state,weak=out.weaknesses.find(x=>x.tries>=2&&x.rate>0),available=st.availableLevels;
- const prefsNow=prefs();const suggested=st.practiceLevel===null?'준비 중':`L${st.practiceLevel}`;
- const selectedRank=app.rankText(prefsNow.rank);
- const coverageText=available.length?`내장 확인 문제: ${available.map(l=>'L'+l).join('·')}만 제공`:'검증된 내장 문제가 없습니다';
- byId('adaptiveHomeExplanation').textContent=st.reason;
- byId('adaptiveHomeLevel').textContent=`${prefsNow.adaptive?'자동':'수동'} · ${suggested} · ${coverageText}`;
- byId('adaptiveReason').textContent=st.reason;
- byId('adaptiveCurrentLevel').textContent=suggested;
- byId('adaptiveRankInfo').textContent=`선택 기력 ${selectedRank} · 목표 L${st.targetLevel}`;
- byId('adaptiveRecent').textContent=st.accuracy===null?'최근 완료 기록 없음':`최근 ${st.historyCount}회 정답률 ${Math.round(st.accuracy*100)}%`;
- byId('adaptiveWeakness').textContent=weak?`다시 연습: ${weak.category}`:'다양한 유형을 풀어 보세요';
+ const out=model.recommend(input()),st=out.state,weak=out.weaknesses.find(x=>x.tries>=2&&x.rate>0);
+ const ps=prefs(),curr=window.GoCurriculum,all=puzzles.getProblems(),target=trackTarget();
+ const coverage=curr?curr.coverage(all):[];
+ const available=coverage.filter(r=>r.available).map(r=>r.level);
+ const proposed=curr?.autoLevel({diagnostic,results:window.GoLifeStage10?.getPracticeRows?.()||[],problems:all});
+ const chosen=target.level,suggested='L'+chosen;
+ const selectedRank=app.rankText(ps.rank);
+ const coverageText=available.length?`연습 트랙 ${available.map(l=>'L'+l).join('·')} · 기본 검수와 원본 임시 배정은 구분됨`:'연습 문제를 준비하고 있습니다';
+ const reason=target.reason;
+ byId('adaptiveHomeExplanation').textContent=reason;
+ byId('adaptiveHomeLevel').textContent=`${ps.adaptive?'단계적 자동':'수동'} · ${suggested} · 공식 기력 평가 아님`;
+ byId('adaptiveReason').textContent=reason;
+ byId('adaptiveCurrentLevel').textContent=suggested+' 연습';
+ byId('adaptiveRankInfo').textContent=`선택 기력 ${selectedRank} · 목표 L${st.targetLevel} · 연습 배정은 공인 단급과 다름`;
+ byId('adaptiveRecent').textContent=st.accuracy===null?'기본 검수 문제의 최근 완료 기록 없음':`기본 문제 최근 ${st.historyCount}회 정답률 ${Math.round(st.accuracy*100)}%`;
+ byId('adaptiveWeakness').textContent=weak?`기본 문제 복습: ${weak.category}`:'다양한 유형을 풀어 보세요';
  byId('adaptiveManualLevel').value=String(manualLevel);
- byId('adaptiveModeToggle').textContent=prefsNow.adaptive?'🔄 자동 추천 사용 중':'🖐️ 수동 선택 사용 중';
- byId('adaptiveModeToggle').setAttribute('aria-pressed',String(prefsNow.adaptive));
- byId('adaptiveStart').textContent=prefsNow.adaptive?'🎯 추천 문제 시작':'🖐️ 선택한 수준 풀기';
- byId('adaptiveStart').disabled=st.practiceLevel===null;
- byId('adaptiveHomeStart').disabled=st.practiceLevel===null;
- byId('adaptiveManualLevel').disabled=prefsNow.adaptive;
- for(const opt of byId('adaptiveManualLevel').options){const n=Number(opt.value);opt.textContent=opt.textContent.replace(/ \[.*?\]$/,'')+(available.includes(n)?' [문제 있음]':' [아직 없음]');}
+ byId('adaptiveModeToggle').textContent=ps.adaptive?'🔄 자동 추천 사용 중':'🖐️ 수동 선택 사용 중';
+ byId('adaptiveModeToggle').setAttribute('aria-pressed',String(ps.adaptive));
+ byId('adaptiveStart').textContent=ps.adaptive?'🎯 연습 트랙 추천 시작':'🖐️ 선택한 연습 트랙 풀기';
+ byId('adaptiveStart').disabled=!available.includes(chosen);
+ byId('adaptiveHomeStart').disabled=!available.includes(chosen);
+ byId('adaptiveManualLevel').disabled=ps.adaptive;
+ for(const opt of byId('adaptiveManualLevel').options){const n=Number(opt.value);opt.textContent=opt.textContent.replace(/ \[.*?\]$/,'')+(available.includes(n)?' [연습 가능]':' [준비 중]');}
  const ass=st.assessment;
  let diagnosticLabel='기초 점검을 시작하면 5개 원형 문제를 차례로 풀어요. 공식 기력 시험은 아니에요.';
- if(diagnostic?.active){
-  const n=diagnostic.answers.length;
-  diagnosticLabel=`🔎 기초 점검 ${n}/5 완료 · ${n<5?'다음 목표: '+(n+1)+'번째 문제':'점검 끝!'}`;
-  if(answeredCurrent)diagnosticLabel+=' · 다음 문제 버튼을 눌러 주세요.';
- }else if(ass)diagnosticLabel=`✅ 기초 점검 완료: ${ass.successes}/5 성공 · 권장 기초 구간 L${ass.level} (공식 기력 아님)`;
+ if(diagnostic?.active){const n=diagnostic.answers.length;diagnosticLabel=`🔎 기초 점검 ${n}/5 완료 · ${n<5?'다음 목표: '+(n+1)+'번째 문제':'점검 끝!'}`;if(answeredCurrent)diagnosticLabel+=' · 다음 문제 버튼을 눌러 주세요.';}
+ else if(ass)diagnosticLabel=`✅ 기초 점검 완료: ${ass.successes}/5 성공 · 연습용 ${suggested} 추천 (공식 기력 아님)`;
  byId('adaptiveDiagnosticProgress').textContent=diagnosticLabel;
  byId('adaptiveDiagnosticNext').hidden=!diagnostic?.active||!answeredCurrent;
  byId('adaptiveDiagnosticStart').textContent=diagnostic?.active?'처음부터 다시 점검':'🔎 기초 5문제 점검';
  byId('adaptiveStatsTarget').textContent='L'+st.targetLevel;
- byId('adaptiveStatsLevel').textContent=suggested;
+ byId('adaptiveStatsLevel').textContent=suggested+' 연습';
  byId('adaptiveStatsAccuracy').textContent=st.accuracy===null?'—':`${Math.round(st.accuracy*100)}%`;
  byId('adaptiveStatsMotifs').textContent=st.motifCount+'종';
- byId('adaptiveStatsExplanation').textContent=`${st.reason} 최근 ${st.historyCount}회 기록·${st.motifCount}가지 문제 원형을 참고합니다. ${coverageText}.${st.medianDurationSec===null?'':' 관찰된 풀이 시간 중앙값은 '+st.medianDurationSec+'초이며 느리게 푼다고 벌점은 없어요.'} 사용자 SGF의 표시 기력은 난이도 검증으로 취급하지 않습니다.`;
+ byId('adaptiveStatsExplanation').textContent=`${reason} ${coverageText}. 원본 SGF의 정답 표시는 독립적인 사활 정답 증명이 아니며, 자동 연습 트랙 이동은 공식 급·단급 측정이 아닙니다.${proposed?` 다음 진급은 같은 구간에서 서로 다른 문제를 힌트 없이 6개 성공한 뒤 이루어집니다.`:''}`;
  byId('adaptiveFeedback').textContent=feedback;
 }
 byId('adaptiveHomeStart').addEventListener('click',runRecommendation);
@@ -2337,8 +2494,8 @@ byId('adaptiveManualLevel').addEventListener('change',e=>{
  manualLevel=Number(e.target.value);storagePut(MANUAL_KEY,manualLevel);
  if(prefs().adaptive)updateSettingsAdaptive(false);
  else render();
- if(!model.availableLevels(puzzles.getProblems()).includes(manualLevel))report(`L${manualLevel} 구간의 검증된 내장 문제는 아직 없어요. 수준은 선택할 수 있지만 문제 출제는 하지 않습니다.`);
- else report(`L${manualLevel} 구간을 직접 선택했어요.`);
+ if(!window.GoCurriculum?.forLevel(puzzles.getProblems(),manualLevel).length)report(`L${manualLevel} 연습 문제는 아직 준비되지 않았어요.`);
+ else report(`L${manualLevel} 연습 트랙을 선택했어요. 원본 임시 배정은 공식 급·단급이 아니에요.`);
 });
 byId('adaptiveModeToggle').addEventListener('click',()=>{
  const next=!prefs().adaptive;updateSettingsAdaptive(next);
@@ -2347,6 +2504,8 @@ byId('adaptiveModeToggle').addEventListener('click',()=>{
 byId('saveRank').addEventListener('click',render);
 byId('settingAdaptive').addEventListener('change',render);
 window.onGoLifeAdaptiveViewChange=view=>{if(['home','tsumego','stats','rank','settings','modes'].includes(view))render();};
+window.addEventListener('golifelab:catalog-ready',render);
+window.addEventListener('golifelab:practice-updated',render);
 window.addEventListener('golifelab:puzzle-complete',event=>{
  const d=event.detail||{};
  if(diagnostic?.active&&!answeredCurrent&&model.diagnosticNext(diagnostic)===d.id&&['success','failure'].includes(d.result)){
@@ -2986,6 +3145,9 @@ function convert(entry,raw){const draft=cvs.inspect(raw,entry.filename);
   prompt:(draft.turn==='B'?'흑':'백')+' 차례야. 원본 SGF에 표시된 좋은 수순을 찾아보자!',sourceUrl:official(entry),
   copyright:'Go Game Guru · CC BY-NC-SA 4.0 (저작자표시 · 비상업 · 동일조건변경허락)',rightsNote:'가정에서 이용하는 원본 출처 표시 학습용 사활 문제'});
  problem.id='ggg-full-'+entry.key.replace(/[^a-zA-Z0-9_-]/g,'-').replace(/-sgf$/,'');
+ // Temporary educational practice-track assignment, NOT a professional grade certificate.
+ const track=root.GoCurriculum?.assignedLevel(entry.key);
+ if(track){problem.level=track;problem.curriculumTrack={level:track,kind:'source-practice',method:'source-category-and-workload-proxy'};}
  problem.rank='원본 '+entry.groupKo+' · 공식 기력 미인증';problem.sourceDifficulty=entry.group;
  problem.catalogPack='ggg-full-2026';problem.sourcePath=entry.path;
  problem.contentRevision=4;
@@ -3107,12 +3269,22 @@ const model=window.GoStage10Model,store=window.GoLifePuzzles,app=window.GoLifeUI
 const $=id=>document.getElementById(id),KEY='go-life-lab:stage10:practice',MODE='go-life-lab:stage10:mode';
 function readRows(){try{const x=JSON.parse(localStorage.getItem(KEY)||'[]');return Array.isArray(x)?x.filter(r=>r&&typeof r.id==='string'&&['success','failure'].includes(r.result)).slice(-500):[];}catch{return [];}}
 let practiceRows=readRows(),unreviewed=0,hintStage=0,latestHint='',running=false,usedSupport=false;
-let choice='auto';try{const old=localStorage.getItem(MODE);if(old==='auto'||model.TIERS.some(t=>t.id===old))choice=old;}catch{}
+let choice='auto';try{const old=localStorage.getItem(MODE);if(old==='auto'||model.TIERS.some(t=>t.id===old)||/^level-[1-9]$/.test(old))choice=old;}catch{}
 const panel=$('smartHintPanel'),status=$('smartStatus'),tip=$('smartHintText'),head=$('smartHintHeading');
 function saveRows(){try{localStorage.setItem(KEY,JSON.stringify(practiceRows.slice(-500)));}catch{/* volatile fallback */}}
 function state(){const ps=app.getPrefs(),diag=window.GoLifeAdaptiveUI?.getDiagnostic?.()||null;
  return model.autoTier({diagnostic:diag,records:practiceRows,problems:store.getProblems(),rank:ps.rank});}
-function activeTier(){const stateValue=state();return {tier:choice==='auto'?stateValue.tier:choice,reason:choice==='auto'?stateValue.reason:`직접 선택한 ${model.TIERS.find(t=>t.id===choice)?.name||'기초'} 문제집이에요. 원본 난이도는 공식 기력과 다릅니다.`};}
+function activeTier(){
+ const curr=window.GoCurriculum;
+ if(choice==='auto'){
+  const ps=app.getPrefs(),diag=window.GoLifeAdaptiveUI?.getDiagnostic?.();
+  const p=curr?.autoLevel({diagnostic:diag,results:practiceRows,problems:store.getProblems()})||{level:1,reason:'기초부터 시작해요.'};
+  return {tier:`level-${p.level}`,reason:p.reason};
+ }
+ if(/^level-[1-9]$/.test(choice))return {tier:choice,reason:`직접 선택한 L${choice.slice(6)} 연습 트랙입니다. 공식 급·단급 인증은 아니에요.`};
+ const m=model.TIERS.find(t=>t.id===choice);
+ return {tier:choice,reason:`직접 선택한 ${m?.name||'기초'} 문제집이에요. 원본 난이도는 공식 기력과 다릅니다.`};
+}
 function scrollToQuestion(){
  // Previously a question changed in memory but the page stayed at the recommendation panel.
  // Scroll to the visible board heading (not the nested 19-line SVG scroll area).
@@ -3128,16 +3300,18 @@ function scrollToQuestion(){
  if(typeof requestAnimationFrame==='function')requestAnimationFrame(move);
  else move();
 }
-function render(){const goal=activeTier(),tier=model.TIERS.find(t=>t.id===goal.tier),all=store.getProblems(),available=all.filter(p=>model.tierOf(p)===goal.tier);
+function tierLabel(id){return id.startsWith('level-')?`L${id.slice(6)} 연습 트랙`:(model.TIERS.find(t=>t.id===id)?.name||'기초 연습');}
+function inMode(p,mode){return mode.startsWith('level-')?window.GoCurriculum?.practiceInfo(p)?.level===Number(mode.slice(6)):model.tierOf(p)===mode;}
+function render(){const goal=activeTier(),all=store.getProblems(),available=all.filter(p=>inMode(p,goal.tier));
  const diag=window.GoLifeAdaptiveUI?.getDiagnostic?.()||null;
- $('smartMode').value=choice;$('smartBadge').textContent=tier?.name||'기초 연습';
+ $('smartMode').value=choice;$('smartBadge').textContent=tierLabel(goal.tier);
  const needsTest=choice==='auto'&&(!diag||!diag.done);
  status.textContent=needsTest?(
   diag?.active?`기초 점검 ${Math.min(5,diag.answers.length+1)}/5번이에요. 아래 버튼으로 이어서 풀어보세요.`:
   '추천 버튼을 누르면 기초 5문제 점검부터 시작해요. 점검 뒤 내 수준에 맞춰 추천해요.'
  ):`${goal.reason} · 현재 ${available.length}개 준비됨`;
  $('smartStart').disabled=!available.length;
- $('smartStart').textContent=needsTest?(diag?.active?'▶ 기초 점검 이어하기':'🔎 기초 점검 시작'):choice==='auto'?'🎯 추천 문제 풀기':`🎯 ${tier.name} 풀기`;
+ $('smartStart').textContent=needsTest?(diag?.active?'▶ 기초 점검 이어하기':'🔎 기초 점검 시작'):choice==='auto'?'🎯 추천 문제 풀기':`🎯 ${tierLabel(goal.tier)} 풀기`;
  if(panel.hidden)return;head.textContent=hintStage?`💡 ${hintStage}/3단계 힌트`:'🧭 착수 도움';
 }
 function nextRecommended(){if(!running)return false;startRecommended();return true;}
@@ -3153,12 +3327,12 @@ function startRecommended(){
   scrollToQuestion();return true;
  }
  const tier=activeTier().tier,rows=store.getResults(),current=store.getCurrent();
- const out=model.recommend({tier,problems:store.getProblems(),results:rows,attempts:practiceRows,avoidId:current?.id});
+ const out=tier.startsWith('level-')?window.GoCurriculum.recommend({level:Number(tier.slice(6)),problems:store.getProblems(),results:rows,avoidId:current?.id}):model.recommend({tier,problems:store.getProblems(),results:rows,attempts:practiceRows,avoidId:current?.id});
  if(!out.problem){status.textContent='선택한 구간의 문제를 아직 준비하지 못했어요. 다른 난이도를 선택하거나 문제 목록에서 직접 골라 주세요.';return false;}
  running=true;
  const changed=store.chooseById(out.problem.id);
  if(!changed){running=false;status.textContent='문제를 열지 못했습니다. 다른 난이도를 선택해 주세요.';return false;}
- status.textContent=`🎯 ${model.TIERS.find(t=>t.id===tier).name} · ${out.problem.title} 문제를 열었어요. 아래 바둑판에서 시작하세요!`;
+ status.textContent=`🎯 ${tierLabel(tier)} · ${out.problem.title} 문제를 열었어요. 정규 기력 인증이 아닌 학습 트랙입니다. 아래 바둑판에서 시작하세요!`;
  scrollToQuestion();return true;
 }
 function hint(session,p){if(session.status!=='playing')return null;
@@ -3181,6 +3355,7 @@ function completed(d){if(!d?.id||!['success','failure'].includes(d.result))retur
  const p=store.getProblems().find(x=>x.id===d.id);if(!p)return;
  const clean=d.result==='success'&&d.hint!==true&&!usedSupport;
  practiceRows.push({id:d.id,result:d.result,clean,at:d.at||new Date().toISOString()});practiceRows=practiceRows.slice(-500);saveRows();
+ window.dispatchEvent(new CustomEvent('golifelab:practice-updated'));
  if(d.result==='failure'){
    panel.hidden=false;head.textContent='🌱 이번 수순 돌아보기';
    tip.textContent=p.reviewStatus==='source-annotated-unverified'?'원본에 실패로 표시된 수순이에요. 왜 실패하는지는 「정답·실패 해설」의 원본 주석과 비교해 주세요. 독립적인 사활 검증은 아닙니다.':'실패 변화도에 도착했어요. 해설의 상대 응수와 활로 변화를 비교해 보세요.';
@@ -3394,6 +3569,60 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') {
     navigator.serviceWorker.register('./sw.js').catch(err => console.info('PWA offline cache unavailable:', err?.message || err));
   });
 }
+</script>
+<script>
+
+/* Child-first page controls: reuse the existing game engine and selectors. */
+(function(){'use strict';
+const $=id=>document.getElementById(id),mode=$('smartMode'),status=$('kidStatus');
+if(!mode||!$('kidStart'))return;
+function showBoard(){
+ const target=document.querySelector('#view-tsumego .board-info');
+ if(!target)return;requestAnimationFrame(()=>{
+  const top=Math.max(0,window.scrollY+target.getBoundingClientRect().top-15);
+  window.scrollTo({top,behavior:'instant'});
+ });
+}
+function chooseAndStart(choice){
+ mode.value=choice;
+ mode.dispatchEvent(new Event('change',{bubbles:true}));
+ if($('smartStart').disabled){status.textContent='아직 이 문제를 준비하지 못했어요. 다른 문제집을 선택해 주세요.';return;}
+ $('smartStart').click();
+ const messages={auto:'🎯 오늘의 문제를 열었어요! 바둑판에 돌을 놓아 봐요.',basic:'🌱 기초 문제를 열었어요. 천천히 생각해 봐요!',easy:'🍀 쉬운 문제를 열었어요. 정답을 찾아보세요!',intermediate:'🌻 중간 문제예요. 상대의 다음 수도 생각해 봐요!',hard:'🔥 어려운 문제에 도전해요. 힌트도 사용할 수 있어요.'};
+ status.textContent=messages[choice]||'새 문제를 열었어요!';
+ showBoard();
+}
+$('kidStart').addEventListener('click',()=>chooseAndStart('auto'));
+for(const b of document.querySelectorAll('[data-kid-mode]')){
+ b.addEventListener('click',()=>chooseAndStart(b.dataset.kidMode));
+}
+$('kidReview').addEventListener('click',()=>window.GoLifeUI?.showView('review'));
+function disclose(id){const el=$(id);if(!el)return;el.open=true;}
+const jump=$('jumpLibrary');
+if(jump)jump.addEventListener('click',()=>{
+ disclose('kidAdvanced');disclose('kidLibraryTools');
+},true);
+// Source catalogue opens can select a question while nested details are open.
+// Preserve the existing catalog click handlers and give children the board, not another list.
+$('gggCatalogList')?.addEventListener('click',e=>{
+ if(!e.target.closest('button'))return;
+ requestAnimationFrame(()=>requestAnimationFrame(showBoard));
+});
+$('problemList')?.addEventListener('click',e=>{
+ if(e.target.closest('[data-problem]'))requestAnimationFrame(showBoard);
+});
+$('curriculumGrid')?.addEventListener('click',e=>{
+ if(e.target.closest('[data-curriculum]')){
+  disclose('kidBrowse');requestAnimationFrame(showBoard);
+ }
+});
+window.addEventListener('golifelab:puzzle-complete',e=>{
+ const result=e.detail?.result;
+ if(result==='success')status.textContent='🌟 잘했어요! 정답 수순을 찾았어요. 다음 문제에도 도전해 봐요!';
+ else if(result==='failure')status.textContent='💚 괜찮아요! 힌트를 보거나 다시 풀어보세요.';
+});
+})();
+
 </script>
 </body>
 </html>

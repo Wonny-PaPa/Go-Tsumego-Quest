@@ -1,11 +1,11 @@
 /* Go Life Lab — public noncommercial PWA. No uploads of learning records. */
-const CACHE_NAME='go-life-lab-public-nc-2026-11-v1';
+const CACHE_NAME='go-life-lab-kids-first-v13-20261122';
 const SHELL=['./','./index.html','./manifest.webmanifest','./icon.png','./icon-192.png','./icon-maskable.png','./apple-touch-icon.png','./favicon.png','./CREDITS_AND_LICENSE.html','./LICENSE_GoGameGuru.txt'];
 self.addEventListener('install',event=>event.waitUntil(
   caches.open(CACHE_NAME).then(cache=>cache.addAll(SHELL)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',event=>event.waitUntil((async()=>{
   const keys=await caches.keys();
-  await Promise.all(keys.filter(k=>k.startsWith('go-life-lab-public-')&&k!==CACHE_NAME).map(k=>caches.delete(k)));
+  await Promise.all(keys.filter(k=>k.startsWith('go-life-lab-')&&k!==CACHE_NAME).map(k=>caches.delete(k)));
   await self.clients.claim();
 })()));
 self.addEventListener('fetch',event=>{
