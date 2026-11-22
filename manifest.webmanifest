@@ -1,0 +1,32 @@
+{
+  "id": "./",
+  "name": "Go Life Lab — 바둑 사활 원정대",
+  "short_name": "Go Life Lab",
+  "description": "무료·비상업적 어린이 바둑 사활 학습. Go Game Guru SGF 422개와 한글 해설(CC BY-NC-SA 4.0).",
+  "lang": "ko",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f4f6f2",
+  "theme_color": "#153e36",
+  "icons": [
+    {
+      "src": "./icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icon-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

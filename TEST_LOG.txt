@@ -1,0 +1,248 @@
+TAP version 13
+# PASS 9 curriculum target levels mapped from 46 valid rank choices
+# PASS invalid rank fallback never invents advanced level
+# PASS only verified built-in levels L1/L2 available
+# PASS not a fake professional issue: pro 9 target L9 but available only L2
+# PASS start rank 30 kyu recommends L1
+# PASS manual absent advanced content returns null rather than silently lowering
+# PASS manual L2 works while record history is unchanged
+# PASS first single successful problem does not jump L1 to L2
+# PASS five diverse clean outcomes promote L1 to L2
+# PASS five successes from single transformed base do not count as diversified skill
+# PASS repeated failures lower L2 to L1 without penalty or false rank
+# PASS mix outcomes preserves L1 and neutral evidence
+# PASS hinted successes weigh less than independent no-hint successes
+# PASS duration displayed informationally and not scoring-based
+# PASS diagnostic recognizes accurate five fixed different motifs
+# PASS partial or forged diagnostic has no result
+# PASS assessment adjusts starting practice level even with no records
+# PASS SGF self-assigned professional level cannot be auto-included
+# PASS invalid and unrelated historical results ignored
+# PASS different unattempted motifs favored over repeated orientation variant
+# PASS all recommended puzzles satisfy available level and reviewed built-in status
+# PASS category weakness requires actual outcome evidence
+# PASS no validated content returns no recommendation
+# PASS diagnostic next correct fixed order, then ends
+# 24/24 Stage 8 adaptive tests passed
+# Subtest: tests/adaptive.test.js
+ok 1 - tests/adaptive.test.js
+  ---
+  duration_ms: 69.675663
+  type: 'test'
+  ...
+# PASS eight distinct original characters in four teams
+# PASS invalid saved character cannot impersonate stored selection
+# PASS all map regions have strictly increasing thresholds
+# PASS zero results means no artificial progress
+# PASS unique successful puzzles count once regardless of retry
+# PASS three distinct solved puzzles unlock forest, not cave
+# PASS daily mission maxes at five while lifetime count continues
+# PASS new local day resets daily not overall progress
+# PASS malformed or failed result cannot unlock a region
+# PASS existing staged content remains 35 examples only in low levels
+# 10/10 Stage 6 adventure tests passed
+# Subtest: tests/adventure.test.js
+ok 2 - tests/adventure.test.js
+  ---
+  duration_ms: 45.319707
+  type: 'test'
+  ...
+# PASS 140 unique source-linked child guides; 58 distinct first-move points; all replays legal; puzzle prompt hides first answer
+# Subtest: tests/child-guides.test.js
+ok 3 - tests/child-guides.test.js
+  ---
+  duration_ms: 181.582786
+  type: 'test'
+  ...
+# PASS parse third party FF4 root / infer turn / report all leaves
+# PASS strictly exclude unmarked leaves and illegal lines by default
+# PASS annotated external SGF can be exported and restored in original loader
+# PASS manual editorial label on omitted valid variation is possible but unproved
+# PASS missing explicit solutions fails closed
+# PASS illegal cannot be selected even when incorrectly annotated success
+# PASS source verdict at an early node allows full continuation replay
+# PASS supports compressed root setup coordinates
+# PASS only confirmed editorial labels are automatically classified
+# PASS illegal SGF syntax and no opening turn rejected
+# PASS oversized and unsupported board blocked
+# PASS no proof of life/death is claimed by goal evaluator
+# 12/12 converter tests passed
+# PASS pass branch is preserved for study, not counted as proven wrong
+# Subtest: tests/converter.test.js
+ok 4 - tests/converter.test.js
+  ---
+  duration_ms: 50.192282
+  type: 'test'
+  ...
+# PASS 140 hard guides; source marked paths, legal replay, hidden answers; source note 113, paths only 27; pass 0
+# Subtest: tests/hard-guides.test.js
+ok 5 - tests/hard-guides.test.js
+  ---
+  duration_ms: 422.191445
+  type: 'test'
+  ...
+# PASS 140 intermediate guides / correct SGF path / legal replay / answer hidden, source commentary: 105
+# Subtest: tests/intermediate-guides.test.js
+ok 6 - tests/intermediate-guides.test.js
+  ---
+  duration_ms: 302.689481
+  type: 'test'
+  ...
+# PASS 35 distinct exercise identifiers from 7 original motifs
+# PASS 9-level curriculum and 46 independent rank selectors
+# PASS all 35 curated boards and terminal variations pass rules validation
+# PASS all 35 problem variation lines play to correct terminal result
+# PASS geometric rotation changes coordinates but preserves success
+# PASS black/white inversion switches player and escape goal color
+# PASS rank and category filter do not invent higher-level professional problem coverage
+# PASS SGF serialization/import round-trip validates 35 problems and terminal counts
+# PASS SGF correctly handles nested alternative branches
+# PASS SGF rejects unannotated game record without goals
+# PASS SGF rejects fabricated success when goal not reached
+# PASS SGF rejects out of board coordinates, non SGF and excessive file size
+# 12/12 Stage 5 library/SGF tests passed
+# Subtest: tests/library.test.js
+ok 7 - tests/library.test.js
+  ---
+  duration_ms: 69.409819
+  type: 'test'
+  ...
+# PASS 50/50 source-annotated sample positions; 343 legal sequences; 93 editorial solutions; 250 excluded; SGF round-trips and playability
+# Subtest: tests/pilot-50.test.js
+ok 8 - tests/pilot-50.test.js
+  ---
+  duration_ms: 187.558611
+  type: 'test'
+  ...
+# PASS stage7 has exactly 35 built-in variants, 7 underlying motifs
+# PASS empty profile starts level 1, 0 XP 0 stars, only default outfit available
+# PASS first no-hint success awards exactly 25 XP, three stars
+# PASS hint use awards 20 XP and 2 stars, then no-hint mastery upgrades only once
+# PASS repeated success never farms XP or stars
+# PASS failed attempt has no penalty and earns no XP
+# PASS failing then succeeding adds one-time 5 XP review bonus and badge
+# PASS previously succeeded puzzle that is failed and recovered gets only single bonus
+# PASS invalid or custom-imported puzzle IDs cannot create rewards
+# PASS all 35 verified layouts have capped finite XP
+# PASS unlock ribbon at 3 stars, leaf at 9 stars, and cap at 3 successes
+# PASS equipped item is normalized when it becomes locked
+# PASS badge unlocks are data-derived and unaffected by session repetitions
+# PASS XP level progression respects thresholds
+# 14/14 Stage 7 rewards tests passed
+# Subtest: tests/rewards.test.js
+ok 9 - tests/rewards.test.js
+  ---
+  duration_ms: 61.429608
+  type: 'test'
+  ...
+# PASS supports all board sizes
+# PASS starts as black and alternates
+# PASS rejects occupied and outside without changing turn
+# PASS captures one adjacent stone
+# PASS captures a multi-stone group in one move
+# PASS setup can start from white turn
+# PASS reset works after a previous reset
+# PASS suicide blocked without advancing turn
+# PASS capture move may fill its last liberty
+# PASS simple ko immediate recapture blocked and undo restores position
+# PASS ko is released after an intervening exchange
+# PASS pass then undo, then reset
+# PASS undo restores capture
+# PASS group counts shared liberties without duplicates
+# PASS rejects invalid imported setup
+# 15/15 tests passed
+# Subtest: tests/rules.test.js
+ok 10 - tests/rules.test.js
+  ---
+  duration_ms: 33.263629
+  type: 'test'
+  ...
+# {
+#   "passed": true,
+#   "sgfs": 422,
+#   "playable": 421,
+#   "sourceAccepted": 1913,
+#   "additionalPaths": 6811,
+#   "continued": 14,
+#   "pagesWithPass": 3,
+#   "unreviewed": 6813
+# }
+# Subtest: tests/source-422-v2.test.js
+ok 11 - tests/source-422-v2.test.js
+  ---
+  duration_ms: 429.837631
+  type: 'test'
+  ...
+# PASS stage10: conservative learning ladder, labels, distinct clean success, safer hints, no unreviewed guessing
+# Subtest: tests/stage10.test.js
+ok 12 - tests/stage10.test.js
+  ---
+  duration_ms: 34.863535
+  type: 'test'
+  ...
+# PASS stage11 review queue, chronological migrations, assisted distinction, spaced dates, no review farming, mastery/recovery, missing entries, report and safe CSV
+# Subtest: tests/stage11.test.js
+ok 13 - tests/stage11.test.js
+  ---
+  duration_ms: 52.912794
+  type: 'test'
+  ...
+# PASS five official in-app region bosses, each two preexisting verified beginner puzzles
+# PASS boss badge IDs and challenge pair are unique across regions
+# PASS empty profile only unlocks starting village
+# PASS distinct successes unlock region threshold, repeated attempts cannot unlock
+# PASS failures alone cannot unlock boss
+# PASS imported SGF or unknown results ignored in missions, boss and rewards
+# PASS daily attempts count unique puzzle IDs including failed attempts
+# PASS clean success counts only successes without hint
+# PASS rescue requires a failed problem followed by later success today
+# PASS success before failure is not considered rescue
+# PASS new local day resets daily tasks but keeps area progress
+# PASS invalid win records and duplicate wins do not award more boss stars
+# PASS five cleared boss IDs cap bonus to fifteen stars
+# PASS reward model adds exactly three boss stars per first boss win and keeps XP independent
+# PASS optional rescue mission does not block two required daily tasks
+# PASS pending rescue picks only last unresolved failure
+# PASS today is calculated in user local calendar not UTC date
+# 17/17 Stage 9 model tests passed
+# Subtest: tests/stage9.test.js
+ok 14 - tests/stage9.test.js
+  ---
+  duration_ms: 32.652865
+  type: 'test'
+  ...
+# PASS 7 original beginner problems have unique IDs
+# PASS every problem has at least one verified correct variation
+# PASS all listed terminal variations are legal and goal-checked
+# PASS single capture succeeds and captures correct white target
+# PASS wrong variation auto-responds and fails without guessing
+# PASS legal but unverified placement is not scored or applied
+# PASS an illegal occupied point is rejected
+# PASS black two-stone capture succeeds
+# PASS atari escape is not confused with two-eye life
+# PASS two user turns with automatic white response reach terminal success
+# PASS three-move wrong branch is a failure only after auto defender move
+# PASS undo reverses full user+auto opponent turn
+# PASS undo after terminal result makes branch playable again
+# PASS hint reveals a vetted winning move and tracks use
+# PASS white-to-move exercise succeeds
+# PASS two accepted correct answers
+# PASS failures are not relabelled success
+# PASS solution replayer covers each step and preserves initial board
+# PASS reset restores initial state and clears hint
+# 19/19 tsumego tests passed
+# Subtest: tests/tsumego-stage4-regression.test.js
+ok 15 - tests/tsumego-stage4-regression.test.js
+  ---
+  duration_ms: 45.073383
+  type: 'test'
+  ...
+1..15
+# tests 15
+# suites 0
+# pass 15
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 908.256121
