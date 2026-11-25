@@ -1,5 +1,5 @@
 /* Go Life Lab — public noncommercial PWA. No uploads of learning records. */
-const CACHE_NAME='go-life-lab-kids-first-v13-20261122';
+const CACHE_NAME='go-life-lab-v15-solid-stones-20261125';
 const SHELL=['./','./index.html','./manifest.webmanifest','./icon.png','./icon-192.png','./icon-maskable.png','./apple-touch-icon.png','./favicon.png','./CREDITS_AND_LICENSE.html','./LICENSE_GoGameGuru.txt'];
 self.addEventListener('install',event=>event.waitUntil(
   caches.open(CACHE_NAME).then(cache=>cache.addAll(SHELL)).then(()=>self.skipWaiting())));
